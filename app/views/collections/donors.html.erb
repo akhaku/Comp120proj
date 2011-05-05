@@ -1,0 +1,3 @@
+<% @donors.each do |donor|%>
+	<%= link_to donor.recfrom, category_path(:type => 'donor', :value => donor.recfrom), :class => "donors_link" %></br>
+<%end%>

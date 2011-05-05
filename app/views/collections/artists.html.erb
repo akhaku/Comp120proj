@@ -1,0 +1,3 @@
+<% @artists.each do |artist|%>
+	<%= link_to artist.creator, category_path(:type => 'artist', :value => artist.creator), :class => "artists_link" %></br>
+<%end%>

@@ -1,27 +1,6 @@
-<h1> Artwork
-<% case @type %>
-<% when 'artist' %>
-<%= 'by' %>
-<% when 'donor' %>
-<%= 'donated by' %>
-<% when 'location' %>
-<%= 'at' %>
-<% end %>
-<%= @value%>
-</h1>
+<h1>Tufts Art Gallery</h1></br>
 
-<% @artworks.each do |artwork| %>
-<div>
-<table width="75%"><tr>
-<td width="40%">
-<img src="<%= artwork.imglink %>", width="100%"/>
-</td>
-<td>
-<span><%= artwork.title %></span><br/>
-<span><%= artwork.creator %></span><br/>
-<span><%= artwork.object %></span><br/>
-<span><%= artwork.recfrom %></span><br/>
-<span><%= artwork.location %></span><br/>
-<p><%= artwork.description %></p>
-</td>
-<% end %>
+<h2>View by</h2></br>
+<%= link_to "Artist", artists_path%>
+<%= link_to "Donor", donors_path%>
+<%= link_to "Location", locations_path%>

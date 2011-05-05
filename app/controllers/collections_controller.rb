@@ -1,5 +1,3 @@
-require 'aws/s3'
-
 class ArtworkDescriptor
 	def initialize(title, creator, date, object, description, recfrom, location, imglink)
 		@title = title
@@ -17,6 +15,9 @@ end
 
 class CollectionsController < ApplicationController
 	def index
+	end
+	
+	def category
 		@type = params[:type]
 		@value = params[:value]
 		
@@ -33,11 +34,7 @@ class CollectionsController < ApplicationController
 
 		@artworks = []
 		dbartworks.each do |artwork|
-			AWS::S3::Base.establish_connection!(
-				:access_key_id     => '',
-				:secret_access_key => ''
-			)
-			imglink = (AWS::S3::S3Object.url_for(artwork.filename + '.jpg','Art_Images'))
+			imglink = 'http://s3.amazonaws.com/Art_Images/' + artwork.filename
 			@artworks.push(ArtworkDescriptor.new(artwork.title,
 												artwork.creator,
 												artwork.date,
@@ -50,6 +47,14 @@ class CollectionsController < ApplicationController
 	end
 	
 	def artists
-		
+		@artists = Artwork.order('creator ASC').uniq_by{|h| h.creator}
+	end
+	
+	def donors
+		@donors = Artwork.order('recfrom ASC').uniq_by{|h| h.recfrom}
+	end
+	
+	def locations
+		@locations = Artwork.order('location ASC').uniq_by{|h| h.location}
 	end
 end
