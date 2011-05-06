@@ -10,3 +10,5 @@ end
 
 gem 'rails', '3.0.4'
 gem 'aws-s3'
+
+gem 'meta_where'

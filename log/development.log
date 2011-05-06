@@ -2580,3 +2580,1602 @@ Started GET "/" for 127.0.0.1 at Fri May 06 16:28:08 -0400 2011
   Processing by CollectionsController#index as HTML
 Rendered collections/index.html.erb within layouts/application (2.7ms)
 Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (23.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('RECFROM', 'OBJNAME', 'DESCRIP', 'HOMELOC', NULL, NULL, 'TITLE', 'CREATOR', '2011-05-06 20:28:55.718151', '2011-05-06 20:28:55.718151')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Kitchen Wall, Alabama, Farmstead, 1936 Photography, black and white silver prints on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1936', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1979.1.3.8.jpg', NULL, 'Kitchen Wall, Alabama, Farmstead, 1936', 'Evans, Walker', '2011-05-06 20:28:55.799159', '2011-05-06 20:28:55.799159')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Portrait of James Agee, 1937 Photography, black and white silver print 1937', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1979.1.3.9.jpg', NULL, 'Portrait of James Agee, 1937', 'Evans, Walker', '2011-05-06 20:28:55.803589', '2011-05-06 20:28:55.803589')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Doorway, 204 West 13th Street, New York City, around 1931 Photography, black and white silver prints on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1931', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1979.1.3.10.jpg', NULL, 'Doorway, 204 West 13th Street, New York City, around 1931', 'Evans, Walker', '2011-05-06 20:28:55.809557', '2011-05-06 20:28:55.809557')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Lunchroom Buddies, New York City, 1931 Photography, black and white silver prints 1931', 'Medford, Eaton Hall, 5 The Green', '1979.1.3.11.jpg', NULL, 'Lunchroom Buddies, New York City, 1931', 'Evans, Walker', '2011-05-06 20:28:55.814189', '2011-05-06 20:28:55.814189')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Stamped Tin Relic, New York, 1930 Photography, black and white silver print on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1931', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1979.1.3.12.jpg', NULL, 'Stamped Tin Relic, New York, 1930', 'Evans, Walker', '2011-05-06 20:28:55.819646', '2011-05-06 20:28:55.819646')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Tin False Front Building, Moundville, Alabama, 1936 Photography, black and white silver prints on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1936', 'Medford, Eaton Hall, 5 The Green', '1979.1.3.13.jpg', NULL, 'Tin False Front Building, Moundville, Alabama, 1936', 'Evans, Walker', '2011-05-06 20:28:55.824504', '2011-05-06 20:28:55.824504')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Ruin of Tabby (Shell) Construction, St. Mary’s, Georgia, 1936 Photography, black and white silver prints on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1936', 'Boston, Medical School, 75 Kneeland St., 9th Floor', '1979.1.3.14.jpg', NULL, 'Ruin of Tabby (Shell) Construction, St. Mary’s, Georgia, 1936', 'Evans, Walker', '2011-05-06 20:28:55.830153', '2011-05-06 20:28:55.830153')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Dock Workers, Havana, 1932 Photography, black and white silver print on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1932', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1979.1.3.15.jpg', NULL, 'Dock Workers, Havana, 1932', 'Evans, Walker', '2011-05-06 20:28:55.835722', '2011-05-06 20:28:55.835722')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. & Mrs. David B. Slater', 'Print', 'Warhol, Andy Kimiko Powers Graphic Arts, color silk screen on canvas 1972', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.5.jpg', NULL, 'Kimiko Powers', 'Warhol, Andy', '2011-05-06 20:28:55.840318', '2011-05-06 20:28:55.840318')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez Parabola Optica Photography 1931', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.1.1.jpg', NULL, 'Parabola Optica', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.845507', '2011-05-06 20:28:55.845507')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez El Sistema Nervioso del Gran Simpatico (greater sympathetic nervous system) Photography 1929', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.1.2.jpg', NULL, 'El Sistema Nervioso del Gran Simpatico (greater sympathetic nervous system)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.851233', '2011-05-06 20:28:55.851233')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez La Buena Fama Durmiendo (Good Reputation Sleeping) Photography 1938', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.1.3.jpg', NULL, 'La Buena Fama Durmiendo (Good Reputation Sleeping)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.856241', '2011-05-06 20:28:55.856241')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez El Eclipse (Sabanas) Photography 1933', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.1.4.jpg', NULL, 'El Eclipse (Sabanas)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.861483', '2011-05-06 20:28:55.861483')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez El Ensuena (The Daydream) Photography 1931', 'Boston, Medical School, 75 Kneeland St., 9th Floor', '1980.7.1.5.jpg', NULL, 'El Ensuena (The Daydream)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.866668', '2011-05-06 20:28:55.866668')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez Un Poco Alegre y Graciosa (Somewhat Gay and Graceful) Photography 1942', 'Boston, Medical School, 75 Kneeland St., 9th Floor', '1980.7.1.6.jpg', NULL, 'Un Poco Alegre y Graciosa (Somewhat Gay and Graceful)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.872296', '2011-05-06 20:28:55.872296')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Manuel Alvarez Bravo Sed Publica (Public Thirst) Silver gelatin print 1934', 'Boston, Medical School, 75 Kneeland St., 9th Floor', '1980.7.1.7.jpg', NULL, 'Sed Publica (Public Thirst)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.877269', '2011-05-06 20:28:55.877269')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez La Quema Tres (Kiln Number Three) Photography 1957', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.1.8.jpg', NULL, 'La Quema Tres (Kiln Number Three)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.882333', '2011-05-06 20:28:55.882333')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Saratoga Springs, New York, 1931 Photography, black and white silver print on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1931', 'Medford, Ballou Hall, 1 The Green, 3rd Fl', '1980.7.3.1.jpg', NULL, 'Saratoga Springs, New York, 1931', 'Evans, Walker', '2011-05-06 20:28:55.887149', '2011-05-06 20:28:55.887149')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Walker Evans: Selected Photographs Photography, portfolio of 15; black and white silver prints; printed on Kodak Polycontrast Rapid paper 1930s', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.3.1-7.jpg', NULL, 'Walker Evans: Selected Photographs', 'Evans, Walker', '2011-05-06 20:28:55.892595', '2011-05-06 20:28:55.892595')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Maine Pump, 1933 Photography, black and white silver prints on Kodak Polycontrast Rapid paper 1933', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.3.2.jpg', NULL, 'Maine Pump, 1933', 'Evans, Walker', '2011-05-06 20:28:55.897404', '2011-05-06 20:28:55.897404')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Breakfast Room at Belle Grove Plantation, White Chapel, Louisiana, 1935 Photography, black and white silver prints on Kodak Polycontrast Rapid paper 1935', 'Medford, Ballou Hall, 1 The Green, 3rd Fl', '1980.7.3.3.jpg', NULL, 'Breakfast Room at Belle Grove Plantation, White Chapel, Louisiana, 1935', 'Evans, Walker', '2011-05-06 20:28:55.902917', '2011-05-06 20:28:55.902917')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Minstrel Poster, Alabama, 1936 Photography, black and white silver prints 1936', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.3.4.jpg', NULL, 'Minstrel Poster, Alabama, 1936', 'Evans, Walker', '2011-05-06 20:28:55.907330', '2011-05-06 20:28:55.907330')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Shoe Shine Sign in Southern Town Photography, black and white silver print 1936', 'Medford, Packard Hall, 4 The Green', '1980.7.3.5.jpg', NULL, 'Shoe Shine Sign in Southern Town', 'Evans, Walker', '2011-05-06 20:28:55.912571', '2011-05-06 20:28:55.912571')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Main Street, Ossining, New York, 1932 Photography, black and white silver prints on Kodak Polycontrast Rapid paper 1932', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.3.6.jpg', NULL, 'Main Street, Ossining, New York, 1932', 'Evans, Walker', '2011-05-06 20:28:55.918021', '2011-05-06 20:28:55.918021')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Evans, Walker Penny Picture Display, Savannah, 1936 Photography, black and white silver prints on Kodak Polycontrast Rapid paper 1936', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.3.7.jpg', NULL, 'Penny Picture Display, Savannah, 1936', 'Evans, Walker', '2011-05-06 20:28:55.922773', '2011-05-06 20:28:55.922773')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Friedlander, Lee Plane over Bull - Kansasa City, Missouri, 1965 Photography,black and white selenium toned prints; printed on Dupont Veralure (VLTW); mounted on 615 GSM Imperial 300 lb. hand made paper 1965', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1980.7.4.5.jpg', NULL, 'Plane over Bull - Kansasa City, Missouri, 1965', 'Friedlander, Lee', '2011-05-06 20:28:55.928735', '2011-05-06 20:28:55.928735')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Fink, Larry Parsons’ School of Design, Costume Party, 1972 Photography, portfolio of 15 black and white printed on Portriga Rapid Agfa paper; overmatted with 4-ply 100% rag archival board 1972', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1981.1.13.jpg', NULL, 'Parsons’ School of Design, Costume Party, 1972', 'Fink, Larry', '2011-05-06 20:28:55.934172', '2011-05-06 20:28:55.934172')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Fink, Larry Lovers in a Doorway - Houston, Tx. 1959 Photography, portfolio of 15 black and white printed on Portriga Rapid Agfa paper; overmatted with 4-ply 100% rag archival board 1959', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1981.1.15.jpg', NULL, 'Lovers in a Doorway - Houston, Tx. 1959', 'Fink, Larry', '2011-05-06 20:28:55.939689', '2011-05-06 20:28:55.939689')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. A. Charles Miller', 'Print', 'Albers, Josef Formulation: Articulation Graphic Arts, silkscreen on paper 1972', 'Medford, Gifford House, 161 Packard Ave.', '1981.4.5a&b.jpg', NULL, 'Formulation: Articulation', 'Albers, Josef', '2011-05-06 20:28:55.944003', '2011-05-06 20:28:55.944003')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. A. Charles Miller', 'Print', 'Albers, Josef Formulation: Articulation Graphic Arts, silkscreen on paper 1972', 'Medford, Gifford House, 161 Packard Ave.', '1981.4.42a&b.jpg', NULL, 'Formulation: Articulation', 'Albers, Josef', '2011-05-06 20:28:55.948673', '2011-05-06 20:28:55.948673')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. A. Charles Miller', 'Print', 'Albers, Josef Formulation: Articulation Graphic Arts, silkscreen on paper 1972', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1981.4.47a&b.jpg', NULL, 'Formulation: Articulation', 'Albers, Josef', '2011-05-06 20:28:55.953470', '2011-05-06 20:28:55.953470')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. A. Charles Miller', 'Print', 'Albers, Josef Formulation: Articulation Graphic Arts, silkscreen on paper 1972', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1981.4.62a&b.jpg', NULL, 'Formulation: Articulation', 'Albers, Josef', '2011-05-06 20:28:55.958356', '2011-05-06 20:28:55.958356')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Richard P. Lasser', 'Painting', 'Frederick John Mulhaupt Boats on the Seine oil on wood panel 1908', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.1.jpg', NULL, 'Boats on the Seine', 'Mulhaupt, Frederick John', '2011-05-06 20:28:55.963067', '2011-05-06 20:28:55.963067')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Sato, Masaaki Subway No. 24 Graphic Arts, silkscreen 1978', 'Medford, Dowling Hall, 419 Boston Ave.', '1982.2.1.jpg', NULL, 'Subway No. 24', 'Sato, Masaaki', '2011-05-06 20:28:55.966939', '2011-05-06 20:28:55.966939')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Ella Brummer', 'Jug (Lekythos)', 'Unknown Greek Lekythos Sculpture, Pentelic marble probably c. 2nd quarter of 4th c. B.C.', 'Medford, Tisch Library, 35 Professors Row', '1982.5.1.jpg', NULL, 'Greek Lekythos', 'Unknown', '2011-05-06 20:28:55.971807', '2011-05-06 20:28:55.971807')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Daniel Schuman', 'Print, Photographic', 'Danny Lyon Route 12 Wisconsin 1963 Silver gelatin print pub. 1979', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.6.2.4.jpg', NULL, 'Route 12 Wisconsin 1963', 'Lyon, Danny', '2011-05-06 20:28:55.977038', '2011-05-06 20:28:55.977038')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Daniel Schuman', 'Print, Photographic', 'Danny Lyon Sparky and Cowboy, Schereville, Indiana, 1965-66 Photography, black and white silver prints pub. 1979', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.6.2.9.jpg', NULL, 'Sparky and Cowboy, Schereville, Indiana, 1965-66', 'Lyon, Danny', '2011-05-06 20:28:55.981309', '2011-05-06 20:28:55.981309')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Arnold Goldbaum and Mr. Marc Green', 'Print, Photographic', 'Boubat, Edouard Petite Fille aux Feuilles Mortes, Paris Photography, black and white silver print 1947', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.7.1.jpg', NULL, 'Petite Fille aux Feuilles Mortes, Paris', 'Boubat, Edouard', '2011-05-06 20:28:55.986315', '2011-05-06 20:28:55.986315')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. Arnold Goldbaum', 'Print, Photographic', 'Boubat, Edouard Lella, Bretagne, 1948 Photography, black and white silver print 1948', 'Medford, Tisch Library, 35 Professors Row', '1982.7.8.jpg', NULL, 'Lella, Bretagne, 1948', 'Boubat, Edouard', '2011-05-06 20:28:55.990875', '2011-05-06 20:28:55.990875')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez Trampa Puesta (Set Trap) Photography 1930’s', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', '1982.8.1.2.jpg', NULL, 'Tramps Puesta (Set Trap)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:55.995895', '2011-05-06 20:28:55.995895')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez Los Agachados (The Crouched Ones) Silver gelatin print 1934', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.8.1.3.jpg', NULL, 'Los Agachados (The Crouched Ones)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:56.001089', '2011-05-06 20:28:56.001089')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Manuel Alvarez Bravo Barda de Panteon (Cemetary Wall) silver gelatin print 1964', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.8.1.4.jpg', NULL, 'Barda de Panteon (Cemetary Wall)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:56.006376', '2011-05-06 20:28:56.006376')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr, and Mrs. Nathan Gantcher', 'Print, Photographic', 'Manuel Alvarez Bravo Obrero en Huelga, Asesinado (Striking Worker, Assassinated) Silver gelatin print 1934', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.8.1.5.jpg', NULL, 'Obrero en Huelga, Asesinado (Striking Worker, Assassinated)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:56.011587', '2011-05-06 20:28:56.011587')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez Tumba Reciente (Fresh Grave) Photography 1933', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.8.1.6.jpg', NULL, 'Tumba Reciente (Fresh Grave)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:56.016137', '2011-05-06 20:28:56.016137')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez Paisage Inventado (Invented Landscape) Photography', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.8.1.7.jpg', NULL, 'Paisage Inventado (Invented Landscape)', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:56.020604', '2011-05-06 20:28:56.020604')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Print, Photographic', 'Friedlander, Lee Lee Ave - Butte, Montana, 1970 Photography, black and white selenium toned print; printed on Dupont Veralure (VLTW); mounted on 615 GSM Imperial 300 lb. hand made paper 1970', 'Medford, Granoff Music Bldg., 20 Talbot Ave.', '1982.8.4.2.jpg', NULL, 'Lee Ave - Butte, Montana, 1970', 'Friedlander, Lee', '2011-05-06 20:28:56.025658', '2011-05-06 20:28:56.025658')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Philip Pearlstein', 'Vessel', 'Unknown Ritual Vessel Ceramics, terracotta 7th-10th century A.D.', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1982.9.2.jpg', NULL, 'Ritual Vessel', 'Unknown', '2011-05-06 20:28:56.030902', '2011-05-06 20:28:56.030902')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Robert and Ruth Remis', 'Painting', 'Emile Bernard La Ribay, 1 May 1886 oil on canvas 1886', 'Medford, Gifford House, 161 Packard Ave.', '1982.1.jpg', NULL, 'La Ribay, 1 May 1886', 'Bernard, Emile', '2011-05-06 20:28:56.035464', '2011-05-06 20:28:56.035464')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Esther Merrin', 'Cloth Fragment', 'Unknown Fabric Fragment Textile, embroidered textile fragment 300-100 b.c.', 'Medford, Gifford House, 161 Packard Ave.', '1983.1.2.5.jpg', NULL, 'Fabric Fragment', 'Unknown', '2011-05-06 20:28:56.039915', '2011-05-06 20:28:56.039915')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Lawrence Dubin', 'Print', 'Picasso, Pablo Meleager Kills the Calydonian Boar (from Ovid’s “Metamorphoses”) Graphic Arts, etching 1930', 'Medford, Gifford House, 161 Packard Ave.', '1983.2.1.jpg', NULL, 'Meleager Kills the Calydonian Boar (from Ovid’s “Metamorphoses”)', 'Picasso, Pablo', '2011-05-06 20:28:56.045515', '2011-05-06 20:28:56.045515')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Lawrence Dubin', 'Print', 'Pablo Picasso The Daughters of Minyas Refuse to Acknowledge the God, Bacchus (from Ovid’s “Metamorphoses”) etching 1930', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1983.2.2.jpg', NULL, 'The Daughters of Minyas Refuse to Acknowledge the God, Bacchus (from Ovid’s “Metamorphoses”)', 'Picasso, Pablo', '2011-05-06 20:28:56.050485', '2011-05-06 20:28:56.050485')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Lawrence Dubin', 'Print', 'Picasso, Pablo Deucalion and Pyrrha create a New Human Race (from Ovid’s “Metamorphoses”) Graphic Arts, etching 1930', 'Medford, Gifford House, 161 Packard Ave.', '1983.2.3.jpg', NULL, 'Deucalion and Pyrrha create a New Human Race (from Ovid’s “Metamorphoses”)', 'Picasso, Pablo', '2011-05-06 20:28:56.056043', '2011-05-06 20:28:56.056043')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Saul Hirshberg', 'Painting', 'Alcalay, Albert Evolving Forms in Landscape Painting, oil on canvas 1971', 'Medford, Packard Hall, 4 The Green', '1983.7.1.jpg', NULL, 'Evolving Forms in Landscape', 'Alcalay, Albert', '2011-05-06 20:28:56.060855', '2011-05-06 20:28:56.060855')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Jeremy Merrin', 'Sculpture', 'Unknown Head of child Sculpture, marble 17th century CE', 'Medford, Cohen Auditorium, 15 South Campus Rd.', '1983.9.jpg', NULL, 'Head of child', 'Unknown', '2011-05-06 20:28:56.065461', '2011-05-06 20:28:56.065461')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Seth Merrin', 'Sculpture', 'Unknown artist Standing Priest / Noble with Headdress (Aztec Stone Figure) volcanic stone c. 1400 - 1520', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1983.11.jpg', NULL, 'Standing Priest / Noble with Headdress (Aztec Stone Figure)', 'Unknown artist', '2011-05-06 20:28:56.070400', '2011-05-06 20:28:56.070400')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. and Mrs. Jeffrey Loria', 'Painting', 'Moore, Henry Seated Mother with twins Graphic Arts, watercolor, gouache, pen and black ink on paper 1981', 'Medford, Gifford House, 161 Packard Ave.', '1983.13.jpg', NULL, 'Seated Mother with twins', 'Moore, Henry', '2011-05-06 20:28:56.074903', '2011-05-06 20:28:56.074903')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Edward Merrin', 'Sculpture', 'Nevelson, Louise Untitled, ca. 1962 Sculpture, gold paint on wood', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', '1984.4.jpg', NULL, 'Untitled', 'Nevelson, Louise', '2011-05-06 20:28:56.079353', '2011-05-06 20:28:56.079353')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. and Mrs. Nathan Gantcher', 'Painting', 'Resnick, Milton Straws II oil on canvas 1982', 'Fine Arts Enterprises', '1984.10.2.jpg', NULL, 'Straws II', 'Resnick, Milton', '2011-05-06 20:28:56.084297', '2011-05-06 20:28:56.084297')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs Nathan Gantcher', 'Painting', 'Elaine De Kooning Bacchus #20 acrylic and oil on canvas 1980', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1984.10.3.jpg', NULL, 'Bacchus #20', 'De Kooning, Elaine', '2011-05-06 20:28:56.089729', '2011-05-06 20:28:56.089729')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. and Mrs. Nathan Gantcher', 'Drawing', 'Gechtoff, Sonia Small Sea Wall II Graphic Arts, acrylic and pencil on paper 1981', 'Medford, Gifford House, 161 Packard Ave.', '1984.10.4.jpg', NULL, 'Small Sea Wall II', 'Gechtoff, Sonia', '2011-05-06 20:28:56.094333', '2011-05-06 20:28:56.094333')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Bruce M. Male', 'Print, Photographic', 'Kertesz, Andre Forced March to the Front between Lonie and Mitulen, Poland Photography, black and white silver print 19 July, 1915', 'Medford, Packard Hall, 4 The Green', '1984.11.11.jpg', '1915-07-19', 'Forced March to the Front between Lonie and Mitulen, Poland', 'Kertesz, Andre', '2011-05-06 20:28:56.099455', '2011-05-06 20:28:56.099455')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. Jeffrey Loria', 'Sculpture', 'Moore, Henry Untitled (Figure in Skirt) Sculpture, bronze 20th century', 'Medford, Cohen Auditorium, 15 South Campus Rd.', '1984.13.jpg', NULL, 'Untitled (Figure in Skirt)', 'Moore, Henry', '2011-05-06 20:28:56.104287', '2011-05-06 20:28:56.104287')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Louise Nevelson', 'Sculpture', 'Louise Nevelson Untitled (two part sculpture) black paint on wood n.d.', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.2.jpg', NULL, 'Untitled (two part sculpture)', 'Nevelson, Louise', '2011-05-06 20:28:56.108182', '2011-05-06 20:28:56.108182')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Arthur Rothstein Postmaster Brown, Old Rag, Virginia, 1935 Silver gelatin print 1935', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.1.jpg', NULL, 'Postmaster Brown, Old Rag, Virginia, 1935', 'Rothstein, Arthur', '2011-05-06 20:28:56.113736', '2011-05-06 20:28:56.113736')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Arthur Rothstein - portfolio of 30 photographs Photography, black and white silver print 1981', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.1-30.jpg', NULL, 'Arthur Rothstein - portfolio of 30 photographs', 'Rothstein, Arthur', '2011-05-06 20:28:56.118928', '2011-05-06 20:28:56.118928')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Arthur Rothstein Girl at Gee’s Bend, Alabama 1937 Silver gelatin print 1937', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.2.jpg', NULL, 'Girl at Gee’s Bend, Alabama 1937', 'Rothstein, Arthur', '2011-05-06 20:28:56.123807', '2011-05-06 20:28:56.123807')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Vernon Evans, migrant to Oregon from South Dakota 1936 Photography, black and white silver prints 1936', 'Medford, Eaton Hall, 5 The Green', '1985.4.3.jpg', NULL, 'Vernon Evans, migrant to Oregon from South Dakota 1936', 'Rothstein, Arthur', '2011-05-06 20:28:56.128618', '2011-05-06 20:28:56.128618')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Arthur Rothstein Migrant Family, Oklahoma 1936 Silver gelatin print 1936', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.4.jpg', NULL, 'Migrant Family, Oklahoma 1936', 'Rothstein, Arthur', '2011-05-06 20:28:56.133670', '2011-05-06 20:28:56.133670')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Dust Storm, Cimarron County, Oklahoma 1936 Photography, black and white silver prints 1936', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.5.jpg', NULL, 'Dust Storm, Cimarron County, Oklahoma 1936', 'Rothstein, Arthur', '2011-05-06 20:28:56.139532', '2011-05-06 20:28:56.139532')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Skull, Badlands, South Dakota 1936 Photography, black and white silver prints 1936', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.6.jpg', NULL, 'Skull, Badlands, South Dakota 1936', 'Rothstein, Arthur', '2011-05-06 20:28:56.144597', '2011-05-06 20:28:56.144597')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Minnie Knox, Garrett County, Maryland 1937 Photography, black and white silver prints 1937', 'Medford, Eaton Hall, 5 The Green', '1985.4.7.jpg', NULL, 'Minnie Knox, Garrett County, Maryland 1937', 'Rothstein, Arthur', '2011-05-06 20:28:56.150387', '2011-05-06 20:28:56.150387')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Migrant Worker, Visalia, California 1940 Photography, black and white silver prints 1940', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.8.jpg', NULL, 'Migrant Worker, Visalia, California 1940', 'Rothstein, Arthur', '2011-05-06 20:28:56.154931', '2011-05-06 20:28:56.154931')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur John Dudeck, Dalton, New York 1937 black and white silver prints 1937', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.9.jpg', NULL, 'John Dudeck, Dalton, New York 1937', 'Rothstein, Arthur', '2011-05-06 20:28:56.159984', '2011-05-06 20:28:56.159984')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Flood Victim, Missouri 1938 Photography, black and white silver prints 1938', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.10.jpg', NULL, 'Flood Victim, Missouri 1938', 'Rothstein, Arthur', '2011-05-06 20:28:56.164779', '2011-05-06 20:28:56.164779')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Mississippi River Flood, St. Louis, Missouri 1943 Photography, black and white silver prints 1943', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.11.jpg', NULL, 'Mississippi River Flood, St. Louis, Missouri 1943', 'Rothstein, Arthur', '2011-05-06 20:28:56.170476', '2011-05-06 20:28:56.170476')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Agate, Nebraska 1939 Photography, black and white silver prints 1939', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.12.jpg', NULL, 'Agate, Nebraska 1939', 'Rothstein, Arthur', '2011-05-06 20:28:56.175497', '2011-05-06 20:28:56.175497')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Sheepherder’s Camp, Montana 1939 Photography, black and white silver print 1939', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.13.jpg', NULL, 'Sheepherder’s Camp, Montana 1939', 'Rothstein, Arthur', '2011-05-06 20:28:56.180990', '2011-05-06 20:28:56.180990')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Hotel de Paris, exterior, Georgetown, Colorado 1939 Photography, black and white silver prints 1939', 'Medford, Eaton Hall, 5 The Green', '1985.4.14.jpg', NULL, 'Hotel de Paris, exterior, Georgetown, Colorado 1939', 'Rothstein, Arthur', '2011-05-06 20:28:56.185869', '2011-05-06 20:28:56.185869')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Shoeshine Man, New York City 1937 Photography, black and white silver prints 1937', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.16.jpg', NULL, 'Shoeshine Man, New York City 1937', 'Rothstein, Arthur', '2011-05-06 20:28:56.191181', '2011-05-06 20:28:56.191181')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Gamblers, Las Vegas, Nevada 1947 Photography, black and white silver prints 1947', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.17.jpg', NULL, 'Gamblers, Las Vegas, Nevada 1947', 'Rothstein, Arthur', '2011-05-06 20:28:56.196203', '2011-05-06 20:28:56.196203')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Pool Hall, Culp, Illinois 1940 Photography, black and white silver prints 1940', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.18.jpg', NULL, 'Pool Hall, Culp, Illinois 1940', 'Rothstein, Arthur', '2011-05-06 20:28:56.201739', '2011-05-06 20:28:56.201739')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Boy with chicken, Hungjao, China 1945 Photography, black and white silver prints 1945', 'Medford, Eaton Hall, 5 The Green', '1985.4.20.jpg', NULL, 'Boy with chicken, Hungjao, China 1945', 'Rothstein, Arthur', '2011-05-06 20:28:56.206670', '2011-05-06 20:28:56.206670')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur The Burma Road 1945 Photography, black and white silver prints 1945', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.21.jpg', NULL, 'The Burma Road 1945', 'Rothstein, Arthur', '2011-05-06 20:28:56.212116', '2011-05-06 20:28:56.212116')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Famine Victim, Hengyang, China 1946 Photography, black and white silver prints 1946', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.22.jpg', NULL, 'Famine Victim, Hengyang, China 1946', 'Rothstein, Arthur', '2011-05-06 20:28:56.217363', '2011-05-06 20:28:56.217363')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Burial of Famine Victim, Hengyang, China 1946 Photography, black and white silver prints 1946', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.23.jpg', NULL, 'Burial of Famine Victim, Hengyang, China 1946', 'Rothstein, Arthur', '2011-05-06 20:28:56.223248', '2011-05-06 20:28:56.223248')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Coal Miners, Wales 1947 Photography, black and white silver prints 1947', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.24.jpg', NULL, 'Coal Miners, Wales 1947', 'Rothstein, Arthur', '2011-05-06 20:28:56.228705', '2011-05-06 20:28:56.228705')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Young Coal Miner, Wales 1947 Photography, black and white silver prints 1947', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.25.jpg', NULL, 'Young Coal Miner, Wales 1947', 'Rothstein, Arthur', '2011-05-06 20:28:56.234025', '2011-05-06 20:28:56.234025')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Farmers in the market, Tocco, Italy 1947 Photography, black and white silver prints 1947', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.26.jpg', NULL, 'Farmers in the market, Tocco, Italy 1947', 'Rothstein, Arthur', '2011-05-06 20:28:56.239247', '2011-05-06 20:28:56.239247')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur John Marin in his studio, Hoboken, New Jersey 1949 Photography, black and white silver prints 1949', 'Medford, Granoff Music Bldg., 20 Talbot Ave.', '1985.4.27.jpg', NULL, 'John Marin in his studio, Hoboken, New Jersey 1949', 'Rothstein, Arthur', '2011-05-06 20:28:56.244795', '2011-05-06 20:28:56.244795')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur American Soldiers in a Nightclub, Vienna, Austria 1947 Photography, black and white silver prints 1947', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.28.jpg', NULL, 'American Soldiers in a Nightclub, Vienna, Austria 1947', 'Rothstein, Arthur', '2011-05-06 20:28:56.250137', '2011-05-06 20:28:56.250137')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur At a Charity Ball, New York City 1951 Photography, black and white silver prints 1951', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.4.29.jpg', NULL, 'At a Charity Ball, New York City 1951', 'Rothstein, Arthur', '2011-05-06 20:28:56.255434', '2011-05-06 20:28:56.255434')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', 'Print, Photographic', 'Rothstein, Arthur Rockland, Maine 1937 Photography, black and white silver prints 1951', 'Medford, Eaton Hall, 5 The Green', '1985.4.30.jpg', NULL, 'Rockland, Maine 1937', 'Rothstein, Arthur', '2011-05-06 20:28:56.260181', '2011-05-06 20:28:56.260181')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Steven and Linda Shapiro in honor of Mr. George Fine', 'Print', 'Durer, Albrecht The Flight into Egypt, (one of 17 cuts from the series “The Life of the Virgin”) Graphic Arts, wood engraving 1503 according to Friedlander', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.5.jpg', NULL, 'The Flight into Egypt, (one of 17 cuts from the series “The Life of the Virgin”)', 'Durer, Albrecht', '2011-05-06 20:28:56.265923', '2011-05-06 20:28:56.265923')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Jeremy Merrin', 'Sculpture', 'Unknown Roman statuette (male) Sculpture, bronze 2nd/3rd CE', 'Medford, Cohen Auditorium, 15 South Campus Rd.', '1985.6.1.jpg', NULL, 'Roman statuette (male)', 'Unknown', '2011-05-06 20:28:56.270413', '2011-05-06 20:28:56.270413')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Jeremy Merrin', 'Sculpture', 'Unknown Olmec Head Sculpture, stone 1500-1000 B.C.', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.6.2.jpg', NULL, 'Olmec Head', 'Unknown', '2011-05-06 20:28:56.274929', '2011-05-06 20:28:56.274929')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Seth Merrin', 'Mirror, Hand (Fragment)', 'Unknown Mexican Mirror Back Tools, stone 1000-1500 A.D.', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.6.5.jpg', NULL, 'Mexican Mirror Back', 'Unknown', '2011-05-06 20:28:56.280123', '2011-05-06 20:28:56.280123')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Samuel Merrin', 'Pectoral', 'Unknown Machica Pectoral (Lomangera) Sculpture, bronze ca. 1 B.C - 1 A.D.', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1985.6.11.jpg', NULL, 'Machica Pectoral (Lomangera)', 'Unknown', '2011-05-06 20:28:56.284891', '2011-05-06 20:28:56.284891')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mrs. Mason Schudder and Mr. John H. Vandermark', 'Painting', 'George Albert Frost View of Tufts College in 1892 oil on canvas 1892', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1986.1.jpg', NULL, 'View of Tufts College in 1892', 'Frost, George Albert', '2011-05-06 20:28:56.290023', '2011-05-06 20:28:56.290023')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. & Mrs. Nathan Gantcher', 'Painting', 'Grace Hartigan Lady with Pomegranates oil on canvas 1985', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1986.7.jpg', NULL, 'Lady with Pomegranates', 'Hartigan, Grace', '2011-05-06 20:28:56.294319', '2011-05-06 20:28:56.294319')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Noma Copley', 'Sculpture', 'Unknown Greek Geometric Horse Sculpture, terracotta 8th-7th century B.C.', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1986.8.2.jpg', NULL, 'Greek Geometric Horse', 'Unknown', '2011-05-06 20:28:56.298178', '2011-05-06 20:28:56.298178')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Noma Copley', 'Sculpture', 'Unknown Head Sculpture, granite 7th - 6th century BCE', 'Medford, Cohen Auditorium, 15 South Campus Rd.', '1986.8.7.jpg', NULL, 'Head', 'Unknown', '2011-05-06 20:28:56.303092', '2011-05-06 20:28:56.303092')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Frank Stella Jr.', 'Sculpture', 'Frank Stella Bogoria aluminum with metal polychrome 1971', 'Medford, Cohen Auditorium, 15 South Campus Rd.', '1986.016.jpg', NULL, 'Bogoria', 'Stella, Frank', '2011-05-06 20:28:56.307909', '2011-05-06 20:28:56.307909')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Miriam Spertus', 'Sculpture', 'Richard Hunt Planar Mountain welded corten steel 1971', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1987.3.jpg', NULL, 'Planar Mountain', 'Hunt, Richard', '2011-05-06 20:28:56.312185', '2011-05-06 20:28:56.312185')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Purchase from monies from budget of the committee on the University Art Collection', 'Painting', 'Paul Stopforth The Little Fascist, 1987 oil and beeswax on board', 'Medford, Cohen Auditorium, 15 South Campus Rd.', '1988.1.1.jpg', NULL, 'The Little Fascist', 'Stopforth, Paul', '2011-05-06 20:28:56.317793', '2011-05-06 20:28:56.317793')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Purchase from funds from the Committee on the Universiyt Art Collection', 'Drawing', 'Stopforth, Paul The Visit Graphic Arts, charcoal on paper', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1988.1.2.jpg', NULL, 'The Visit', 'Stopforth, Paul', '2011-05-06 20:28:56.322651', '2011-05-06 20:28:56.322651')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Jonathan M. Tisch', 'Sculpture', 'Unknown artist Porpianong (Senufo Wood Figure of a Hornbill) wood and pigments n.d. Standing figure with spread wings, long beak to the breast. Two small hornbills standing on wings.', 'Medford, Granoff Music Bldg., 20 Talbot Ave.', '1988.3.1.jpg', NULL, 'Porpianong (Senufo Wood Figure of a Hornbill)', 'Unknown artist', '2011-05-06 20:28:56.327857', '2011-05-06 20:28:56.327857')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Jeremy, Seth, and Samuel Merrin, and Esther Merrin Bronstein', 'Sculpture', 'Unknown Head of Hermes Propylaios Sculpture, white crystalline marble n.d.', 'Medford, Cohen Auditorium, 15 South Campus Rd.', '1988.4.jpg', NULL, 'Head of Hermes Propylaios', 'Unknown', '2011-05-06 20:28:56.332398', '2011-05-06 20:28:56.332398')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Painting', 'John Frederick Kensett Lake George Landscape, Late Summer Oil on canvas 1868', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.4.1.jpg', NULL, 'Lake George Landscape, Late Summer', 'Kensett, John Frederick', '2011-05-06 20:28:56.336994', '2011-05-06 20:28:56.336994')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Arnold and Emily Weiss', 'Sculpture', 'William Zorach Standing Woman marble', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.4.2.jpg', NULL, 'Standing Woman', 'Zorach, William', '2011-05-06 20:28:56.341494', '2011-05-06 20:28:56.341494')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Painting', 'Dwight William Tryon Long Island Landscape oil on canvas on board n.d.', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.6.1.jpg', NULL, 'Long Island Landscape', 'Tryon, Dwight William', '2011-05-06 20:28:56.347032', '2011-05-06 20:28:56.347032')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Painting', 'Grant Wood Ph.D. oil on canvas n.d.', 'Medford, Gifford House, 161 Packard Ave.', '1991.6.3.jpg', NULL, 'Ph.D.', 'Wood, Grant', '2011-05-06 20:28:56.352683', '2011-05-06 20:28:56.352683')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Arnold Weiss', 'Painting', 'Charles Sprague Pearce Harvest Moon, n.d. oil on canvas Agricultural landscape with high horizon line. Female figure in right foreground carrying pitchfork.', 'Medford, Ballou Hall, 1 The Green, 3rd Fl', '1991.6.5.jpg', NULL, 'Harvest Moon', 'Pearce, Charles Sprague', '2011-05-06 20:28:56.358330', '2011-05-06 20:28:56.358330')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Painting', 'Fairfield Porter Landscape-Southampton Hills oil on canvas 20th century', 'Medford, Gifford House, 161 Packard Ave.', '1991.6.6.jpg', NULL, 'Landscape-Southampton Hills', 'Porter, Fairfield', '2011-05-06 20:28:56.363865', '2011-05-06 20:28:56.363865')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Arnold Weiss', 'Painting', 'Gifford Beal From My Studio, 1956 oil on canvas Bright green landscape with very thick, visible brushstrokes.', 'Medford, Ballou Hall, 1 The Green, 3rd Fl', '1991.6.7.jpg', NULL, 'From My Studio', 'Beal, Gifford', '2011-05-06 20:28:56.368548', '2011-05-06 20:28:56.368548')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Painting', 'Willard Metcalf Snake River, New Hampshire oil on canvas n.d.', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.6.8.jpg', NULL, 'Snake River, New Hampshire', 'Metcalf, Willard', '2011-05-06 20:28:56.374039', '2011-05-06 20:28:56.374039')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Painting', 'Gifford Beal Julius Caesar oil on panel undated', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.6.11.jpg', NULL, 'Julius Caesar', 'Beal, Gifford', '2011-05-06 20:28:56.379005', '2011-05-06 20:28:56.379005')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Nathan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez Un Poco Alegre Y Graciosa Photography, black and white silver print 1974', 'Location Unknown', '1991.8.3.1.jpg', NULL, 'Un Poco Alegre Y Graciosa', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:56.384844', '2011-05-06 20:28:56.384844')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Nanthan Gantcher', 'Print, Photographic', 'Bravo, Manuel Alvarez La de las Bellas Artes Photography, black and white silver print 1974', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.8.3.5.jpg', NULL, 'La de las Bellas Artes', 'Bravo, Manuel Alvarez', '2011-05-06 20:28:56.390732', '2011-05-06 20:28:56.390732')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Nathan Gantcher', 'Print, Photographic', 'Edgerton, Dr. Harold Milk Drop Coronet Photography, black and white silver print 1935', 'Medford, Tisch Library, 35 Professors Row', '1991.8.4.9.jpg', NULL, 'Milk Drop Coronet', 'Edgerton, Dr. Harold', '2011-05-06 20:28:56.395871', '2011-05-06 20:28:56.395871')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Nathan Gantcher', 'Print, Photographic', 'Edgerton, Dr. Harold Bullet Through the Balloons Photography, black and white silver print 1959', 'Medford, Anderson Hall, 200 College Ave.', '1991.8.4.11.jpg', NULL, 'Bullet Through the Balloons', 'Edgerton, Dr. Harold', '2011-05-06 20:28:56.401193', '2011-05-06 20:28:56.401193')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Nathan Gantcher', 'Print, Photographic', 'Kertesz, Andre Forced March to the Front between Lonie and Mitulen, Poland Photography, black and white silver print 19 July, 1915', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.8.7.6.jpg', '1915-07-19', 'Forced March to the Front between Lonie and Mitulen, Poland', 'Kertesz, Andre', '2011-05-06 20:28:56.407687', '2011-05-06 20:28:56.407687')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Nanthan Gantcher', 'Print, Photographic', 'Siskind, Aaron Lima 89, (Duplicate) Photography 1989', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.8.9.4.jpg', NULL, 'Lima 89, (Duplicate)', 'Siskind, Aaron', '2011-05-06 20:28:56.413651', '2011-05-06 20:28:56.413651')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Nanthan Gantcher', 'Print, Photographic', 'Siskind, Aaron Westport 87 (Duplicate) Photography 1988', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1991.8.9.8.jpg', NULL, 'Westport 87 (Duplicate)', 'Siskind, Aaron', '2011-05-06 20:28:56.418301', '2011-05-06 20:28:56.418301')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Drawing', 'Eva Hesse Untitled Mixed media 1960', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1992.1.3.jpg', NULL, 'Untitled', 'Hesse, Eva', '2011-05-06 20:28:56.423150', '2011-05-06 20:28:56.423150')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Drawing', 'Weber, Max Female Nude Graphic Arts, charcoal on paper', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1992.1.4.jpg', NULL, 'Female Nude', 'Weber, Max', '2011-05-06 20:28:56.427862', '2011-05-06 20:28:56.427862')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Painting', 'David Park Male Portrait Painting, oil on canvas 20th century', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1992.1.8.jpg', NULL, 'Male Portrait', 'Park, David', '2011-05-06 20:28:56.432290', '2011-05-06 20:28:56.432290')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. Gilbert Palley', 'Print', 'Dali, Salvador Ace of Diamonds Graphic Arts, lithograph printed in 1971', 'Medford, Tisch Library, 35 Professors Row', '1992.3.3.4.jpg', NULL, 'Ace of Diamonds', 'Dali, Salvador', '2011-05-06 20:28:56.494326', '2011-05-06 20:28:56.494326')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Henry Lusardi / Doehla Foundation', 'Sculpture', 'Townley, Hugh Gate 14 Sculpture, various woods 1984', 'Medford, Tisch Library, 35 Professors Row', '1992.006.jpg', NULL, 'Gate 14', 'Townley, Hugh', '2011-05-06 20:28:56.498867', '2011-05-06 20:28:56.498867')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. Arnold Weiss (DDS 1953)', 'Painting', 'Paul Camille Guigou Les bords de l’Aiguerbron a Lourmarin oil on board n.d.', 'Medford, Mugar Hall, 160R Packard Ave., Fares Center', '1993.7.jpg', NULL, 'Les bords de l’Aiguerbron a Lourmarin', 'Guigou, Paul Camille', '2011-05-06 20:28:56.503682', '2011-05-06 20:28:56.503682')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('commission for library', 'Painting', 'Yuan Yun Sheng Two Ancient Chinese Tales-Blue and Red and Yellow Equals White acrylic on canvas 1983', 'Fine Arts Enterprises', '1994.1.jpg', NULL, 'Two Ancient Chinese Tales-Blue and Red and Yellow Equals White', 'Sheng, Yuan Yun', '2011-05-06 20:28:56.508480', '2011-05-06 20:28:56.508480')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Maud Morgan', 'Painting', 'Morgan, Maud Spacescape oil on canvas 1971', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1997.4.3.jpg', NULL, 'Spacescape', 'Morgan, Maud', '2011-05-06 20:28:56.512967', '2011-05-06 20:28:56.512967')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Bridges, Marilyn Heightened Perspectives, Stonehenge #2, Wiltshire, England Silver Gelatin Print 1985', 'Medford, Tisch Library, 35 Professors Row', '1997.42.4.jpg', NULL, 'Heightened Perspectives, Stonehenge #2, Wiltshire, England', 'Bridges, Marilyn', '2011-05-06 20:28:56.518155', '2011-05-06 20:28:56.518155')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Bridges, Marilyn Heightened Perspectives, Cherhill Horse, Wiltshire, England Photography, silver gelatin print portfolio 1985', 'Medford, Tisch Library, 35 Professors Row', '1997.42.5.jpg', NULL, 'Heightened Perspectives, Cherhill Horse, Wiltshire, England', 'Bridges, Marilyn', '2011-05-06 20:28:56.523440', '2011-05-06 20:28:56.523440')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Bridges, Marilyn Heightened Perspectives, Lane Manned, N.Y.C., New York Photography, silver gelatin print portfolio 1985', 'Medford, Tisch Library, 35 Professors Row', '1997.42.16.jpg', NULL, 'Heightened Perspectives, Lane Manned, N.Y.C., New York', 'Bridges, Marilyn', '2011-05-06 20:28:56.528796', '2011-05-06 20:28:56.528796')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Richard Neel & Dr. Hartley Neel (1969, M.D.)', 'Painting', 'Alice Neel Spanish Harlem oil on canvas 1938', 'Medford, Gifford House, 161 Packard Ave.', '1997.44.jpg', NULL, 'Spanish Harlem', 'Neel, Alice', '2011-05-06 20:28:56.532872', '2011-05-06 20:28:56.532872')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Norman, Dorothy Hand, Chatham Photography, silver print 1937', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1997.44.13.jpg', NULL, 'Hand, Chatham', 'Norman, Dorothy', '2011-05-06 20:28:56.537699', '2011-05-06 20:28:56.537699')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Norman, Dorothy Church Steeple, Falmouth Photography, silver print 1937', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '1997.44.14.jpg', NULL, 'Church Steeple, Falmouth', 'Norman, Dorothy', '2011-05-06 20:28:56.543026', '2011-05-06 20:28:56.543026')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Kathryn (class of 1977) and Kenneth Chenault, New York', 'Print', 'Woodruff, Hale Trusty on a Mule Graphic Arts, linocut 1931-1946', 'Medford, Gifford House, 161 Packard Ave.', '1998.61.jpg', NULL, 'Trusty on a Mule', 'Woodruff, Hale', '2011-05-06 20:28:56.547387', '2011-05-06 20:28:56.547387')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Courtesy of the Artist', 'Print, Photographic', 'Misrach, Richard Aerial Target (“Dart”) Shot Down in Ordinance Area, Wendover Air Base, Utah Photography, dye coupler photograph 1998', 'Medford, Eaton Hall, 5 The Green', '1999.01.jpg', NULL, 'Aerial Target (“Dart”) Shot Down in Ordinance Area, Wendover Air Base, Utah', 'Misrach, Richard', '2011-05-06 20:28:56.552436', '2011-05-06 20:28:56.552436')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Courtesy of the Artist', 'Print, Photographic', 'Misrach, Richard Cloudburst, Nuclear Test Site, Nevada Photography, dye coupler photograph 1987', 'Medford, Eaton Hall, 5 The Green', '1999.02.jpg', NULL, 'Cloudburst, Nuclear Test Site, Nevada', 'Misrach, Richard', '2011-05-06 20:28:56.557424', '2011-05-06 20:28:56.557424')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Painting', 'Ofoni, Justice (?) Best in Hair Cut, Barber Board Painting, paint on board unknown', 'Medford, Dowling Hall, 419 Boston Ave.', '1999.4.jpg', NULL, 'Best in Hair Cut, Barber Board', 'Ofoni, Justice (?)', '2011-05-06 20:28:56.561846', '2011-05-06 20:28:56.561846')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Orna Shulman', 'Print', 'Hodgkin, Howard Red Palm Graphic Arts, hand-colored lithograph, with watercolor and gouache c. 1986', 'Medford, Gifford House, 161 Packard Ave.', '2000.4.jpg', NULL, 'Red Palm', 'Hodgkin, Howard', '2011-05-06 20:28:56.566319', '2011-05-06 20:28:56.566319')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Placido Arango', 'Painting', 'Helen Frankenthaler Orange Shapes in Frame acryllic on canvas 1964', 'Medford, Gifford House, 161 Packard Ave.', '2000.16.jpg', NULL, 'Orange Shapes in Frame', 'Frankenthaler, Helen', '2011-05-06 20:28:56.570554', '2011-05-06 20:28:56.570554')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Jacques, Michael L. Spring Swans (public park benches and swans) Graphic Arts, etching', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2000.25.8.jpg', NULL, 'Spring Swans', 'Jacques, Michael L.', '2011-05-06 20:28:56.574789', '2011-05-06 20:28:56.574789')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Peress, Gilles Rwandan Hutu Refugees waiting for medical attention, Tanzania Photography, black and white 1994', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2000.27.1.jpg', NULL, 'Rwandan Hutu Refugees waiting for medical attention, Tanzania', 'Peress, Gilles', '2011-05-06 20:28:56.579598', '2011-05-06 20:28:56.579598')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Peress, Gilles Evacuation of Jews, Skanderia, Sarajevo, Bosnia Photography, black and white 1993', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2000.27.5.jpg', NULL, 'Evacuation of Jews, Skanderia, Sarajevo, Bosnia', 'Peress, Gilles', '2011-05-06 20:28:56.584838', '2011-05-06 20:28:56.584838')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Harold Greisman', 'Sculpture', 'Noguchi, Isamu Worm Stone Sculpture, stone, granite', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2000.31.jpg', NULL, 'Worm Stone', 'Noguchi, Isamu', '2011-05-06 20:28:56.589073', '2011-05-06 20:28:56.589073')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('on loan from Dental School', 'Print', 'Miro, Joan Graphic Arts, serigraph', 'Medford, Gifford House, 161 Packard Ave.', '2001.02.jpg', NULL, 'question?', 'Miro, Joan', '2011-05-06 20:28:56.592998', '2011-05-06 20:28:56.592998')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Samuel Merrin', 'Mask', 'Ceremonial Mask Ceremonial Object, silver, copper, cinnabar paint, cotton 750-1150 AD', 'Medford, Gifford House, 161 Packard Ave.', '2001.03.jpg', NULL, 'Ceremonial Mask', NULL, '2011-05-06 20:28:56.598278', '2011-05-06 20:28:56.598278')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Edward Merrin', 'Sculpture', 'Unknown Zeus Sculpture 3rd/4th c. AD', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2001.07.jpg', NULL, 'Zeus', 'Unknown', '2011-05-06 20:28:56.602460', '2011-05-06 20:28:56.602460')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff/Mary Cruz', 'Print, Photographic', 'Gall, Sally Canoe Silver gelatin print 1990', 'Medford, Tisch Library, 35 Professors Row', '2001.08.02.jpg', NULL, 'Canoe', 'Gall, Sally', '2011-05-06 20:28:56.606365', '2011-05-06 20:28:56.606365')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Kim and David Slater', 'Painting', 'Fink, Aaron Walking Man No. 3 oil on canvas 1983', 'Medford, Tisch Library, 35 Professors Row', '2002.02.jpg', NULL, 'Walking Man No. 3', 'Fink, Aaron', '2011-05-06 20:28:56.611293', '2011-05-06 20:28:56.611293')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Meyerowitz, Joel JFK Airport Photography 1968', 'Medford, Tisch Library, 35 Professors Row', '2002.02.01.jpg', NULL, 'JFK Airport', 'Meyerowitz, Joel', '2011-05-06 20:28:56.615696', '2011-05-06 20:28:56.615696')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Michael Targoff', 'Print, Photographic', 'Meyerowitz, Joel Central Park Photography 1969', 'Medford, Univ. Advancement, 80 George St.', '2002.02.05.jpg', NULL, 'Central Park', 'Meyerowitz, Joel', '2011-05-06 20:28:56.619586', '2011-05-06 20:28:56.619586')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Pucker Gallery', 'Painting', 'Hessing, Jeffrey Interior oil on canvas 1990', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', '2003.003.jpg', NULL, 'Interior', 'Hessing, Jeffrey', '2011-05-06 20:28:56.624404', '2011-05-06 20:28:56.624404')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. and Mrs. Albert L. Rosenthal', 'Sculpture', 'Pomodoro, Arnoldo Lettera Narrahira Sculpture 1977', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2003.014.jpg', NULL, 'Lettera Narrahira', 'Pomodoro, Arnoldo', '2011-05-06 20:28:56.628807', '2011-05-06 20:28:56.628807')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. and Mrs. Albert L. Rosenthal', 'Print', 'Kandinsky, Wassily Weisser Klang (Roethel 113) Graphic Arts, 5 colored woodblock print 1911', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', '2003.016.jpg', NULL, 'Weisser Klang (Roethel 113)', 'Kandinsky, Wassily', '2011-05-06 20:28:56.633040', '2011-05-06 20:28:56.633040')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Enrico Pinardi and Pucker Gallery', 'Drawing', 'Pinardi, Enrico Enrico Pinardi, American (b. 1934) Solitude, 1987 graphite on paper', 'Medford, Tisch Library, 35 Professors Row', '2004.002.jpg', NULL, 'Solitude, 1987', 'Pinardi, Enrico', '2011-05-06 20:28:56.637596', '2011-05-06 20:28:56.637596')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of the artist (check with Amy S)', 'Print, Photographic', 'MacMillan, Jim First Light, 9/12/01 Photography, color Photograph 2001', 'Medford, Cohen Auditorium, 15 South Campus Rd.', '2004.006.jpg', NULL, 'First Light, 9/12/01', 'MacMillan, Jim', '2011-05-06 20:28:56.642121', '2011-05-06 20:28:56.642121')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dorothy M. Skinner (J''52) and John S. Cook', 'Painting', 'Pearlstein, Phillip Female Nude Seated on Stool Graphic Arts, watercolor 1972', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2004.025.jpg', NULL, 'Female Nude Seated on Stool', 'Pearlstein, Phillip', '2011-05-06 20:28:56.646823', '2011-05-06 20:28:56.646823')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dorothy M. Skinner (J''52) and John S. Cook', 'Drawing', 'Smith, David Untitled, (abstract drawing for sculpture) Graphic Arts, watercolor and ink on paper 1950', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2004.026.jpg', NULL, 'Untitled, (abstract drawing for sculpture)', 'Smith, David', '2011-05-06 20:28:56.651551', '2011-05-06 20:28:56.651551')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Al and Carol Rosenthal', 'Print', 'Gottlieb, Adolph Crimson Ground Graphic Arts, Screenprint 1972', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', '2004.027.jpg', NULL, 'Crimson Ground', 'Gottlieb, Adolph', '2011-05-06 20:28:56.656277', '2011-05-06 20:28:56.656277')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Al and Carol Rosenthal', 'Print', 'Calder, Alexander Untitled (red, yellow, orange, blue an black abstract design) Graphic Arts, lithograph not dated', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', '2004.028.jpg', NULL, 'Untitled (red, yellow, orange, blue an black abstract design)', 'Calder, Alexander', '2011-05-06 20:28:56.661771', '2011-05-06 20:28:56.661771')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Al and Carol Rosenthal', 'Print', 'Vasarely, Victor Untitled (printed in red and green) Edition # 12/100 Graphic Arts, silkscreen not dated', 'Medford, Tisch Library, 35 Professors Row', '2004.029.jpg', NULL, 'Untitled (printed in red and green) Edition # 12/100', 'Vasarely, Victor', '2011-05-06 20:28:56.666313', '2011-05-06 20:28:56.666313')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Al and Carol Rosenthal', 'Print', 'Porter, Fairfield Isle au Haut Graphic Arts, color lithograph, edition no. 13/100 1974-5', 'Medford, Ballou Hall, 1 The Green, 3rd Fl', '2004.031.jpg', NULL, 'Isle au Haut', 'Porter, Fairfield', '2011-05-06 20:28:56.671009', '2011-05-06 20:28:56.671009')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Al and Carol Rosenthal', 'Print', 'Cocteau, Jean Through Nature’s Window Edition # 21/40 Lithograph not dated', 'Boston, Medical School, 75 Kneeland St., 9th Floor', '2004.032.jpg', NULL, 'Through Nature’s Window Edition # 21/40', 'Cocteau, Jean', '2011-05-06 20:28:56.675975', '2011-05-06 20:28:56.675975')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Skinner, Dorothy M. and John S. Cook', 'Painting', 'Alan Davie Homage to Caribs No. 41, 1976 oil on canvas', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2004.042.jpg', NULL, 'Homage to Caribs No. 41', 'Davie, Alan', '2011-05-06 20:28:56.680300', '2011-05-06 20:28:56.680300')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Lipsett, James', 'Print', 'James Rosenquist Sister Shrieks (36/39), 1987 Lithograph, monoprint, and collage', 'Medford, Granoff Music Bldg., 20 Talbot Ave.', '2005.002.jpg', NULL, 'Sister Shrieks', 'Rosenquist, James', '2011-05-06 20:28:56.684744', '2011-05-06 20:28:56.684744')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Aidekman-Kaye, Shirley', 'Print', 'Calder, Alexander Untitled Lithograph, 124/125', 'Medford, Univ. Advancement, 80 George St.', '2005.01.jpg', NULL, 'Untitled', 'Calder, Alexander', '2011-05-06 20:28:56.688935', '2011-05-06 20:28:56.688935')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Targoff, Michael', 'Print, Photographic', 'Baril, Tom Tom Baril Chrysler Building, 1995 Toned gelatin silver print; Published by Double Elephant Editions, 2004', 'Medford, Anderson Hall, 200 College Ave.', '2006.002.jpg', NULL, 'Chrysler Building', 'Baril, Tom', '2011-05-06 20:28:56.693749', '2011-05-06 20:28:56.693749')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Targoff, Michael', 'Print, Photographic', 'Baril, Tom Tom Baril Taughannock Falls #2, 1997/2004 Toned gelatin silver print; Published by Double Elephant Editions', 'Medford, Anderson Hall, 200 College Ave.', '2006.006.jpg', NULL, 'Taughannock Falls #2', 'Baril, Tom', '2011-05-06 20:28:56.698987', '2011-05-06 20:28:56.698987')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Kenneth Aidekman', 'Drawing', 'Robert Hernandez American (b.1978) Untitled, 2008 Archival ink, marker, white sharpie marker, and pencil, on a birch ply wood surface', 'Medford, Aidekman Art Center, 15 South Campus Rd.', '2009.022.jpg', NULL, 'Untitled', 'Hernandez, Robert', '2011-05-06 20:28:56.703596', '2011-05-06 20:28:56.703596')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Purchase from Saidenberg Gallery, N.Y., N. Y.', 'Painting', 'Gyorgy Kepes Untitled (abstract design in blues and greens) acrylic with sand on canvas', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_00080.jpg', NULL, 'Untitled', 'Kepes, Gyorgy', '2011-05-06 20:28:56.709803', '2011-05-06 20:28:56.709803')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Sculpture', 'James Hennessey Samurai Warrior cast bronze with green patina 1965', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_00090.jpg', NULL, 'Samurai Warrior', 'Hennessey, James', '2011-05-06 20:28:56.714375', '2011-05-06 20:28:56.714375')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Painting', 'Giddings Hyde Ballou Portrait of Hosea Ballou II oil on canvas 19th century Bust portrait of a balding man wearing black suit.', 'Medford, Ballou Hall, 1 The Green, 3rd Fl', 'AI_01530.jpg', NULL, 'Portrait of Hosea Ballou II', 'Ballou, Giddings Hyde', '2011-05-06 20:28:56.719795', '2011-05-06 20:28:56.719795')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Walter, A.B. The Rev Hosea Ballou Graphic Arts, print of an engraving', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_01600_b.jpg', NULL, 'The Rev Hosea Ballou', 'Walter, A.B.', '2011-05-06 20:28:56.724520', '2011-05-06 20:28:56.724520')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Thomas O. Marvin', 'Painting', 'Benjamin Champney, attributed Untitled (Ballou Hall on the Hill), c.1860 oil on board Ballou Hall and possibly Packard Hall centered in composition atop green hill with trees. Both buildings silhouetted against blue sky with clouds. Small white building at end of road, left side.', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', 'AI_01700.jpg', NULL, 'Untitled (Ballou Hall on the Hill)', 'Champney, Benjamin (attributed)', '2011-05-06 20:28:56.730294', '2011-05-06 20:28:56.730294')[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Dr. and Mrs. Anthony J. Guzezetta, M. ‘18', 'Painting', 'Tommaso De Viva Coriolanus oil on canvas', 'Fine Arts Enterprises', 'AI_08000.jpg', NULL, 'Coriolanus', 'De Viva, Tommaso', '2011-05-06 20:28:56.734987', '2011-05-06 20:28:56.734987')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Dr. Maurice S. Segal', 'Print', 'Morisot, Berthe Untitled (Landscape with Boat) Graphic Arts, drypoint 1888-90', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_14700.3.jpg', NULL, 'Untitled (Landscape with Boat)', 'Morisot, Berthe', '2011-05-06 20:28:56.740949', '2011-05-06 20:28:56.740949')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Estate of Andrew R. Winslow', 'Painting', 'Edward L. Custer Landscape of the Town of Munchen oil on canvas 1871', 'Fine Arts Enterprises', 'AI_27790.jpg', NULL, 'Landscape of the Town of Munchen', 'Custer, Edward L.', '2011-05-06 20:28:56.746361', '2011-05-06 20:28:56.746361')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of the artist', 'Drawing', 'Baskin, Leonard Pan Hermes Graphic Arts, ink and wash on paper 1965', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_32000.jpg', NULL, 'Pan Hermes', 'Baskin, Leonard', '2011-05-06 20:28:56.751391', '2011-05-06 20:28:56.751391')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Hanks Estate', 'Painting', 'Sargent, John Singer Portrait of Dr. Morton Prince Painting, oil on canvas c.1895', 'Medford, Gifford House, 161 Packard Ave.', 'AI_41500.jpg', NULL, 'Portrait of Dr. Morton Prince', 'Sargent, John Singer', '2011-05-06 20:28:56.755820', '2011-05-06 20:28:56.755820')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Mr. and Mrs. Carl J. Gilbert', 'Sculpture', 'Rodin, Auguste Despair Sculpture, bronze with green patina 1890', 'Medford, Gifford House, 161 Packard Ave.', 'AI_45000.jpg', NULL, 'Despair', 'Rodin, Auguste', '2011-05-06 20:28:56.761345', '2011-05-06 20:28:56.761345')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Painting', 'Unknown artist Portrait of Charles Tufts oil on panel 19th century', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_52000.jpg', NULL, 'Portrait of Charles Tufts', 'Unknown artist', '2011-05-06 20:28:56.766150', '2011-05-06 20:28:56.766150')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Tufts Alumni Council', 'Painting', 'Sylvester Harrington Portrait of Charles Tufts oil on panel 1839', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_52010.jpg', NULL, 'Portrait of Charles Tufts', 'Harrington, Sylvester', '2011-05-06 20:28:56.770567', '2011-05-06 20:28:56.770567')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Stuart and Rawson, Frederick T. and Albert Leighton Tuft’s College Graphic Arts, engraving reproduced in book The History of Medford , by Charles Brooks', 'Medford, Tisch Library, 35 Professors Row', 'AI_52505.jpg', NULL, 'Tuft’s College', 'Stuart and Rawson, Frederick T. and Albert Leighton', '2011-05-06 20:28:56.775976', '2011-05-06 20:28:56.775976')
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Thomas O. Marvin', 'Painting', 'George Albert Frost Tufts College in 1888 oil on canvas Green landscape with rocky terrain in foreground. Fence-lined road in middleground leading into background. Tufts campus buildings visible along skyline. Figures between trees on left side differentiate this work from Frost''s View of Tuft College in 1892 (1986.1).', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', 'AI_53300.jpg', NULL, 'Tufts College in 1888', 'Frost, George Albert', '2011-05-06 20:28:56.782088', '2011-05-06 20:28:56.782088')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Painting', 'Unknown artist Portrait of Hannah Robinson Tufts oil on panel 19th century', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_53900.jpg', NULL, 'Portrait of Hannah Robinson Tufts', 'Unknown', '2011-05-06 20:28:56.787613', '2011-05-06 20:28:56.787613')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Tufts Alumni Council', 'Painting', 'Sylvester Harrington Portrait of Hannah Robinson Tufts oil on panel 19th century', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_53920.jpg', NULL, 'Portrait of Hannah Robinson Tufts', 'Harrington, Sylvester', '2011-05-06 20:28:56.792967', '2011-05-06 20:28:56.792967')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Bell, D. View of Framingham Common in 1808 Graphic Arts, color lithograph 1872', 'Medford, Bendetson Hall, 2 The Green', 'AI_57600.jpg', NULL, 'View of Framingham Common in 1808', 'Bell, D.', '2011-05-06 20:28:56.798497', '2011-05-06 20:28:56.798497')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Thomas Whittemore', 'Painting', 'Jane Stuart Portrait of George Washington oil on canvas n.d.', 'Fine Arts Enterprises', 'AI_58600.jpg', NULL, 'Portrait of George Washington', 'Stuart, Jane', '2011-05-06 20:28:56.803489', '2011-05-06 20:28:56.803489')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Painting', 'Wendell Alacy Untitled (Landscape with Windmill) oil on canvas c.1886', 'Medford, Mugar Hall, Fares Center, 160R Packard Ave,', 'AI_70009.jpg', NULL, 'Untitled (Landscape with Windmill)', 'Alacy, Wendell', '2011-05-06 20:28:56.809047', '2011-05-06 20:28:56.809047')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Piranesi, Giovanni Battista Temple of Neptune, Paestum, from the “Views of the Paestum”, Plate XVII, Focillon 598) Graphic Arts, etching (probably an engraving)', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_70029.jpg', NULL, 'Temple of Neptune, Paestum, from the “Views of the Paestum” from the “Views of the Paestum”, Plate XVII, Focillon 598)', 'Piranesi, Giovanni Battista', '2011-05-06 20:28:56.814079', '2011-05-06 20:28:56.814079')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Flynn, William R. Wrought Iron Fences III Graphic Arts, woodcut on paper attached to canvas 1962-63', 'Fine Arts Enterprises', 'AI_70040.jpg', NULL, 'Wrought Iron Fences III', 'Flynn, William R.', '2011-05-06 20:28:56.818832', '2011-05-06 20:28:56.818832')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of the Hodgdon Estate, purchased from the artist', 'Painting', 'Luis Francis Mora Rosemary in Costume oil on primed linen canvas', 'Medford, Ballou Hall, 1 The Green, 3rd Fl', 'AI_70117.jpg', NULL, 'Rosemary in Costume', 'Mora, Luis Francis', '2011-05-06 20:28:56.824942', '2011-05-06 20:28:56.824942')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Painting', 'Christopher Pearse Cranch View of Venice oil on canvas n.d.', 'Medford, Mugar Hall, 160R Packard Ave., Fares Center', 'AI_70131.jpg', NULL, 'View of Venice', 'Cranch, Christopher Pearse', '2011-05-06 20:28:56.829639', '2011-05-06 20:28:56.829639')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. C. Elmore Watkins', 'Painting', 'Russell Cheney Old Mill Bridge, Portsmouth, NH oil on canvas 1934 Landscape with houses and a bridge behind a single tree that divides the composition in half.', 'Medford, Ballou Hall, 1 The Green, 2nd Fl', 'AI_70134.jpg', NULL, 'Old Mill Bridge, Portsmouth, NH', 'Cheney, Russell', '2011-05-06 20:28:56.835160', '2011-05-06 20:28:56.835160')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift (?) of Lawrence Rill Schumann Art Foundation', 'Painting', 'Edward Barnard Lintott Cyclamen oil on canvas undated', 'Medford, Gifford House, 161 Packard Ave.', 'AI_70138.jpg', NULL, 'Cyclamen', 'Lintott, Edward Barnard', '2011-05-06 20:28:56.841045', '2011-05-06 20:28:56.841045')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Gift of Hodgen Estate, 1952; purchased from Frank Partridge', 'Painting', 'Attributed to James Stark Gipsies oil on wood panel c.1830', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_70170.jpg', NULL, 'Gipsies', 'Stark, James, attributed', '2011-05-06 20:28:56.846532', '2011-05-06 20:28:56.846532')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Leighton, Clare Corsican Washerwomen Graphic Arts, wood engraving 55/215 c.1936', 'Medford, Tisch Library, 35 Professors Row', 'AI_70189.jpg', NULL, 'Corsican Washerwomen', 'Leighton, Clare', '2011-05-06 20:28:56.851425', '2011-05-06 20:28:56.851425')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Marsh, Reginald Switch Engines, Erie Yards, Jersey City Graphic Arts, lithograph 1947', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_70198.jpg', NULL, 'Switch Engines, Erie Yards, Jersey City', 'Marsh, Reginald', '2011-05-06 20:28:56.856365', '2011-05-06 20:28:56.856365')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Sommer, William The Sunday Boy Graphic Arts, lithograph', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_70239.jpg', NULL, 'The Sunday Boy', 'Sommer, William', '2011-05-06 20:28:56.861378', '2011-05-06 20:28:56.861378')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Smillie, James David Rough Sport in the Yosemite ( a Fragment) Graphic Arts, engraving 11/1885', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_70252.jpg', NULL, 'Rough Sport in the Yosemite ( a Fragment)', 'Smillie, James David', '2011-05-06 20:28:56.866126', '2011-05-06 20:28:56.866126')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Millet, Jean Francois Les Becheurs Graphic Arts, etching', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_70253.jpg', NULL, 'Les Becheurs', 'Millet, Jean Francois', '2011-05-06 20:28:56.870469', '2011-05-06 20:28:56.870469')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES (NULL, 'Print', 'Hunt, William Morris Untitled Graphic Arts, lithograph', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_70254.jpg', NULL, 'Untitled', 'Hunt, William Morris', '2011-05-06 20:28:56.875273', '2011-05-06 20:28:56.875273')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "artworks" ("recfrom", "object", "description", "location", "filename", "date", "title", "creator", "updated_at", "created_at") VALUES ('Mr. Lawrence Schumann', 'Drawing', 'Canedo Untitled (Nude Woman) Graphic Arts, terracotta conte on paper', 'Medford, Aidekman Art Center, 15 South Campus Rd.', 'AI_70255.jpg', NULL, 'Untitled (Nude Woman)', 'Canedo', '2011-05-06 20:28:56.879512', '2011-05-06 20:28:56.879512')
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 16:29:18 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists" for 127.0.0.1 at Fri May 06 16:29:23 -0400 2011
+  Processing by CollectionsController#artists as HTML
+  [1m[36mArtwork Load (80.5ms)[0m  [1mSELECT "artworks".* FROM "artworks" ORDER BY creator ASC[0m
+Rendered collections/artists.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 165ms (Views: 35.0ms | ActiveRecord: 80.5ms)
+
+
+Started GET "/category?type=artist&value=Fink%2C+Aaron" for 127.0.0.1 at Fri May 06 16:29:30 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Fink, Aaron", "type"=>"artist"}
+  [1m[35mArtwork Load (1.5ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Fink, Aaron')
+Rendered collections/category.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 7.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/category?type=artist&value=Fink%2C+Aaron" for 127.0.0.1 at Fri May 06 16:29:34 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Fink, Aaron", "type"=>"artist"}
+  [1m[36mArtwork Load (1.5ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Fink, Aaron')[0m
+Rendered collections/category.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 17ms (Views: 6.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/artists" for 127.0.0.1 at Fri May 06 16:29:35 -0400 2011
+  Processing by CollectionsController#artists as HTML
+  [1m[35mArtwork Load (28.2ms)[0m  SELECT "artworks".* FROM "artworks" ORDER BY creator ASC
+Rendered collections/artists.html.erb within layouts/application (88.9ms)
+Completed 200 OK in 155ms (Views: 93.5ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/category?type=artist&value=Custer%2C+Edward+L." for 127.0.0.1 at Fri May 06 16:29:36 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Custer, Edward L.", "type"=>"artist"}
+  [1m[36mArtwork Load (1.5ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Custer, Edward L.')[0m
+Rendered collections/category.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 6.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/category?type=artist&value=De+Kooning%2C+Elaine" for 127.0.0.1 at Fri May 06 16:29:39 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"De Kooning, Elaine", "type"=>"artist"}
+  [1m[35mArtwork Load (1.6ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'De Kooning, Elaine')
+Rendered collections/category.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 7.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/category?type=artist&value=Rothstein%2C+Arthur" for 127.0.0.1 at Fri May 06 16:29:42 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Rothstein, Arthur", "type"=>"artist"}
+  [1m[36mArtwork Load (4.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Rothstein, Arthur')[0m
+Rendered collections/category.html.erb within layouts/application (71.7ms)
+Completed 200 OK in 95ms (Views: 76.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/category?type=artist&value=Rothstein%2C+Arthur" for 127.0.0.1 at Fri May 06 16:29:47 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Rothstein, Arthur", "type"=>"artist"}
+  [1m[35mArtwork Load (4.6ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Rothstein, Arthur')
+Rendered collections/category.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 31ms (Views: 10.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/category?type=artist&value=Rothstein%2C+Arthur" for 127.0.0.1 at Fri May 06 16:30:09 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Rothstein, Arthur", "type"=>"artist"}
+  [1m[36mArtwork Load (12.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Rothstein, Arthur')[0m
+Rendered collections/category.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 41ms (Views: 11.2ms | ActiveRecord: 12.6ms)
+  [1m[36mArtwork Load (18.7ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+  [1m[35mArtwork Load (0.4ms)[0m  SELECT "artworks".* FROM "artworks" LIMIT 1
+  [1m[36mArtwork Load (3.0ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator LIKE '%Evan%')[0m
+  [1m[35mArtwork Load (3.2ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator LIKE '%evan%')
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 16:45:09 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists" for 127.0.0.1 at Fri May 06 16:46:59 -0400 2011
+  Processing by CollectionsController#artists as HTML
+  [1m[36mArtwork Load (82.3ms)[0m  [1mSELECT "artworks".* FROM "artworks" ORDER BY creator ASC[0m
+Rendered collections/artists.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 170ms (Views: 36.1ms | ActiveRecord: 82.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 16:47:03 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[36mArtwork Load (0.8ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Evans')[0m
+  [1m[35mArtwork Load (0.8ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = '%Evans%')
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Evans, Walker')[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Evans, Walke')
+
+
+Started GET "/artists" for 127.0.0.1 at Fri May 06 16:49:42 -0400 2011
+  Processing by CollectionsController#artists as HTML
+  [1m[35mArtwork Load (29.0ms)[0m  SELECT "artworks".* FROM "artworks" ORDER BY creator ASC
+Rendered collections/artists.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 100ms (Views: 35.6ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/category?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:49:44 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[36mArtwork Load (1.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')[0m
+Rendered collections/category.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 18ms (Views: 7.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/category.json?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:49:48 -0400 2011
+  Processing by CollectionsController#category as JSON
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[35mArtwork Load (1.5ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')
+Completed   in 53ms
+
+ActionView::MissingTemplate (Missing template collections/category with {:handlers=>[:rjs, :erb, :rhtml, :rxml, :builder], :locale=>[:en, :en], :formats=>[:json]} in view paths "/Users/brian/code/120SpringTrunk/app/views"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/category.xml?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:49:53 -0400 2011
+  Processing by CollectionsController#category as XML
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[36mArtwork Load (1.7ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')[0m
+Completed   in 14ms
+
+ActionView::MissingTemplate (Missing template collections/category with {:handlers=>[:rjs, :erb, :rhtml, :rxml, :builder], :locale=>[:en, :en], :formats=>[:xml]} in view paths "/Users/brian/code/120SpringTrunk/app/views"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/collection.xml?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:50:18 -0400 2011
+
+ActionController::RoutingError (No route matches "/collection.xml"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/collections.xml?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:50:23 -0400 2011
+
+ActionController::RoutingError (No route matches "/collections.xml"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/category.json?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:50:50 -0400 2011
+  Processing by CollectionsController#category as JSON
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[35mArtwork Load (60.2ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')
+Completed   in 72ms
+
+ActionView::MissingTemplate (Missing template collections/category with {:handlers=>[:rjs, :erb, :rhtml, :rxml, :builder], :locale=>[:en, :en], :formats=>[:json]} in view paths "/Users/brian/code/120SpringTrunk/app/views"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/category.json?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:51:23 -0400 2011
+  Processing by CollectionsController#category as JSON
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[36mArtwork Load (2.7ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')[0m
+Completed 406 Not Acceptable in 12ms
+
+
+Started GET "/category.xml?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:51:27 -0400 2011
+  Processing by CollectionsController#category as XML
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[35mArtwork Load (1.7ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')
+Completed 200 OK in 94ms (Views: 82.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/category.xml?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:51:41 -0400 2011
+  Processing by CollectionsController#category as XML
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[36mArtwork Load (1.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')[0m
+Completed   in 14ms
+
+ActionView::MissingTemplate (Missing template collections/category with {:handlers=>[:rjs, :erb, :rhtml, :rxml, :builder], :locale=>[:en, :en], :formats=>[:xml]} in view paths "/Users/brian/code/120SpringTrunk/app/views"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/category.xml?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:51:49 -0400 2011
+  Processing by CollectionsController#category as XML
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[35mArtwork Load (1.7ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')
+Completed 406 Not Acceptable in 11ms
+
+
+Started GET "/category.json?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:51:57 -0400 2011
+  Processing by CollectionsController#category as JSON
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[36mArtwork Load (1.7ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')[0m
+Completed 200 OK in 14ms (Views: 2.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/category?type=artist&value=Beal%2C+Gifford" for 127.0.0.1 at Fri May 06 16:52:09 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Beal, Gifford", "type"=>"artist"}
+  [1m[35mArtwork Load (1.7ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Beal, Gifford')
+Rendered collections/category.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 18ms (Views: 7.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 17:08:09 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 17:09:42 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/donors" for 127.0.0.1 at Fri May 06 17:10:00 -0400 2011
+  Processing by CollectionsController#donors as HTML
+  [1m[36mArtwork Load (29.7ms)[0m  [1mSELECT "artworks".* FROM "artworks" ORDER BY recfrom ASC[0m
+Rendered collections/donors.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 92ms (Views: 28.6ms | ActiveRecord: 29.7ms)
+
+
+Started GET "/artists" for 127.0.0.1 at Fri May 06 17:10:06 -0400 2011
+  Processing by CollectionsController#artists as HTML
+  [1m[35mArtwork Load (27.5ms)[0m  SELECT "artworks".* FROM "artworks" ORDER BY creator ASC
+Rendered collections/artists.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 158ms (Views: 34.7ms | ActiveRecord: 27.5ms)
+
+
+Started GET "/category?type=artist&value=Pearce%2C+Charles+Sprague" for 127.0.0.1 at Fri May 06 17:10:16 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Pearce, Charles Sprague", "type"=>"artist"}
+  [1m[36mArtwork Load (1.5ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Pearce, Charles Sprague')[0m
+Rendered collections/category.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 81ms (Views: 6.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/category?type=artist&value=Pearce%2C+Charles+Sprague" for 127.0.0.1 at Fri May 06 17:10:28 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Pearce, Charles Sprague", "type"=>"artist"}
+  [1m[35mArtwork Load (2.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Pearce, Charles Sprague')
+Rendered collections/category.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 20ms (Views: 7.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/category?type=artist&value=Pearce%2C+Charles+Sprague" for 127.0.0.1 at Fri May 06 17:10:43 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Pearce, Charles Sprague", "type"=>"artist"}
+  [1m[36mArtwork Load (1.5ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator = 'Pearce, Charles Sprague')[0m
+Rendered collections/category.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 7.3ms | ActiveRecord: 1.5ms)
+  [1m[36mArtwork Load (1.8ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (creator LIKE '%pearce%')[0m
+
+
+Started GET "/donors" for 127.0.0.1 at Fri May 06 17:35:16 -0400 2011
+  Processing by CollectionsController#donors as HTML
+  [1m[35mArtwork Load (26.8ms)[0m  SELECT "artworks".* FROM "artworks" ORDER BY recfrom ASC
+Rendered collections/donors.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 152ms (Views: 30.2ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:35:19 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+Completed   in 1ms
+
+NoMethodError (undefined method `empty?' for CollectionsController:Class):
+  app/controllers/collections_controller.rb:24:in `category'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:37:35 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+Completed   in 1ms
+
+NoMethodError (undefined method `empty?' for CollectionsController:Class):
+  app/controllers/collections_controller.rb:24:in `category'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:37:45 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+Completed   in 0ms
+
+NoMethodError (undefined method `empty?' for CollectionsController:Class):
+  app/controllers/collections_controller.rb:24:in `category'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:38:40 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+Completed   in 3ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/collections_controller.rb:25:in `search'
+  app/controllers/collections_controller.rb:25:in `category'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:38:57 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[36mArtwork Load (2.0ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')[0m
+Rendered collections/category.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 80ms (Views: 8.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:40:48 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[35mArtwork Load (1.5ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')
+Rendered collections/category.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:40:50 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[36mArtwork Load (1.9ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')[0m
+Rendered collections/category.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 28ms (Views: 12.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:41:09 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[35mArtwork Load (1.6ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')
+Rendered collections/category.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 8.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:41:27 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[36mArtwork Load (1.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')[0m
+Rendered collections/category.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:41:33 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[36mArtwork Load (1.9ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')[0m
+Rendered collections/category.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 22ms (Views: 9.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:43:18 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[35mArtwork Load (1.0ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')
+Rendered collections/category.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 9.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/artworks/search?query=pearce" for 127.0.0.1 at Fri May 06 17:50:34 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+Completed   in 3ms
+
+SyntaxError (/Users/brian/code/120SpringTrunk/app/models/artwork.rb:18: syntax error, unexpected kIF_MOD, expecting '}'
+            | { :artist.like => search if filter == 'artist' } \
+                                         ^
+/Users/brian/code/120SpringTrunk/app/models/artwork.rb:18: syntax error, unexpected '}', expecting kEND
+            | { :artist.like => search if filter == 'artist' } \
+                                                              ^
+/Users/brian/code/120SpringTrunk/app/models/artwork.rb:21: syntax error, unexpected ')', expecting kEND):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/artworks/search?query=pearce" for 127.0.0.1 at Fri May 06 17:50:35 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+Completed   in 3ms
+
+SyntaxError (/Users/brian/code/120SpringTrunk/app/models/artwork.rb:18: syntax error, unexpected kIF_MOD, expecting '}'
+            | { :artist.like => search if filter == 'artist' } \
+                                         ^
+/Users/brian/code/120SpringTrunk/app/models/artwork.rb:18: syntax error, unexpected '}', expecting kEND
+            | { :artist.like => search if filter == 'artist' } \
+                                                              ^
+/Users/brian/code/120SpringTrunk/app/models/artwork.rb:21: syntax error, unexpected ')', expecting kEND):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/artworks/search?query=pearce" for 127.0.0.1 at Fri May 06 17:50:47 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mArtwork Load (0.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1
+Completed   in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.1ms)
+
+
+Started GET "/artworks/search?query=pearce" for 127.0.0.1 at Fri May 06 17:52:06 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mArtwork Load (0.2ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1
+Completed   in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+
+
+Started GET "/artworks/search/?query=pearce" for 127.0.0.1 at Fri May 06 17:52:22 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1[0m
+Completed   in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started GET "/artworks/search/?query=pearce" for 127.0.0.1 at Fri May 06 17:52:35 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[35mArtwork Load (0.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1
+Completed   in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/artworks/search/?query=pearce" for 127.0.0.1 at Fri May 06 17:52:36 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[36mArtwork Load (0.3ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1[0m
+Completed   in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/artworks/search/?query=pearce" for 127.0.0.1 at Fri May 06 17:52:36 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[35mArtwork Load (0.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1
+Completed   in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.3ms)
+
+
+Started GET "/artworks/search/?query=pearce" for 127.0.0.1 at Fri May 06 17:52:41 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mArtwork Load (0.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1
+Completed   in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/artworks/search/?query=pearce" for 127.0.0.1 at Fri May 06 17:52:42 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1[0m
+Completed   in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/artworks/search/?query=pearce" for 127.0.0.1 at Fri May 06 17:52:53 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"search", "query"=>"pearce"}
+  [1m[35mArtwork Load (0.2ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 0 LIMIT 1
+Completed   in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Artwork with ID=search):
+  app/controllers/artworks_controller.rb:22:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/search?query=pearce" for 127.0.0.1 at Fri May 06 17:53:13 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"query"=>"pearce"}
+Completed   in 9ms
+
+ActionView::MissingTemplate (Missing template artworks/search with {:formats=>[:html], :locale=>[:en, :en], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "/Users/brian/code/120SpringTrunk/app/views"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/search?query=pearce" for 127.0.0.1 at Fri May 06 17:53:14 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"query"=>"pearce"}
+Completed   in 8ms
+
+ActionView::MissingTemplate (Missing template artworks/search with {:formats=>[:html], :locale=>[:en, :en], :handlers=>[:rjs, :rhtml, :rxml, :erb, :builder]} in view paths "/Users/brian/code/120SpringTrunk/app/views"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/search?query=pearce" for 127.0.0.1 at Fri May 06 17:54:27 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"query"=>"pearce"}
+Rendered artworks/search.html.erb within layouts/application (58.1ms)
+Completed   in 67ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2172514900_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/search?query=pearce" for 127.0.0.1 at Fri May 06 17:54:46 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"query"=>"pearce"}
+Rendered artworks/search.html.erb within layouts/application (27.2ms)
+Completed   in 36ms
+
+ActionView::Template::Error (No attribute named `artist` exists for table `artworks`):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2175058660_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:55:18 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[36mArtwork Load (1.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')[0m
+Rendered collections/category.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 8.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/category?type=donor&value=Dr.+Daniel+Schuman" for 127.0.0.1 at Fri May 06 17:55:19 -0400 2011
+  Processing by CollectionsController#category as HTML
+  Parameters: {"value"=>"Dr. Daniel Schuman", "type"=>"donor"}
+  [1m[35mArtwork Load (1.5ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (recfrom = 'Dr. Daniel Schuman')
+Rendered collections/category.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 8.7ms | ActiveRecord: 1.5ms)
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mArtwork Load (2.8ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))
+
+
+Started GET "/search?query=pearce" for 127.0.0.1 at Fri May 06 17:57:45 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"query"=>"pearce"}
+  [1m[36mArtwork Load (3.2ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))[0m
+Rendered artworks/search.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 26ms (Views: 18.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 17:58:03 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 17:58:04 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 17:58:22 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 17:59:22 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2174723760_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 17:59:24 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2173734300_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=pearce" for 127.0.0.1 at Fri May 06 17:59:32 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"utf8"=>"âœ“", "search"=>"pearce"}
+  [1m[35mArtwork Load (22.8ms)[0m  SELECT "artworks".* FROM "artworks"
+Rendered artworks/search.html.erb within layouts/application (1303.5ms)
+Completed 200 OK in 1371ms (Views: 1285.3ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 17:59:55 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2174657360_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=pearce" for 127.0.0.1 at Fri May 06 17:59:58 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"utf8"=>"âœ“", "search"=>"pearce"}
+  [1m[36mArtwork Load (22.6ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+Rendered artworks/search.html.erb within layouts/application (1294.7ms)
+Completed 200 OK in 1305ms (Views: 1278.0ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:00:07 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2176195440_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&pearce=pearce" for 127.0.0.1 at Fri May 06 18:00:15 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"utf8"=>"âœ“", "pearce"=>"pearce"}
+  [1m[35mArtwork Load (20.6ms)[0m  SELECT "artworks".* FROM "artworks"
+Rendered artworks/search.html.erb within layouts/application (1333.1ms)
+Completed 200 OK in 1342ms (Views: 1317.6ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:00:26 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2176110700_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=pearce" for 127.0.0.1 at Fri May 06 18:00:30 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"utf8"=>"âœ“", "search"=>"pearce"}
+  [1m[36mArtwork Load (21.7ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+Rendered artworks/search.html.erb within layouts/application (1330.1ms)
+Completed 200 OK in 1338ms (Views: 1313.3ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:01:01 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2176456740_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:01:04 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mArtwork Load (2.9ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))
+Rendered artworks/search.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 29ms (Views: 22.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:01:31 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[36mArtwork Load (2.7ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))[0m
+Rendered artworks/search.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 28ms (Views: 21.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/search.json?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:01:40 -0400 2011
+  Processing by ArtworksController#search as JSON
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+Completed 406 Not Acceptable in 75ms
+
+
+Started GET "/search.json?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:01:41 -0400 2011
+  Processing by ArtworksController#search as JSON
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+Completed 406 Not Acceptable in 5ms
+
+
+Started GET "/search.json?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:01:42 -0400 2011
+  Processing by ArtworksController#search as JSON
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+Completed 406 Not Acceptable in 4ms
+
+
+Started GET "/search.json?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:01:42 -0400 2011
+  Processing by ArtworksController#search as JSON
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+Completed 406 Not Acceptable in 5ms
+
+
+Started GET "/search.json?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:01:42 -0400 2011
+  Processing by ArtworksController#search as JSON
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+Completed 406 Not Acceptable in 4ms
+
+
+Started GET "/search.json?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:02:14 -0400 2011
+  Processing by ArtworksController#search as JSON
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mArtwork Load (2.6ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))
+Completed 200 OK in 73ms (Views: 66.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/search.json?utf8=%E2%9C%93&query=pearce" for 127.0.0.1 at Fri May 06 18:02:33 -0400 2011
+  Processing by ArtworksController#search as JSON
+  Parameters: {"utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[36mArtwork Load (2.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))[0m
+Completed 200 OK in 75ms (Views: 10.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:03:49 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2175618040_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:03:52 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mArtwork Load (2.7ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))
+Rendered artworks/search.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 27ms (Views: 19.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:04:14 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[36mArtwork Load (2.9ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))[0m
+Rendered artworks/search.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 21ms (Views: 14.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:06:32 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mArtwork Load (2.7ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator = 'pearce')
+Rendered artworks/search.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 17ms (Views: 9.5ms | ActiveRecord: 2.7ms)
+  [1m[36mArtwork Load (2.0ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator = 'pearce')[0m
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:07:45 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[36mArtwork Load (0.3ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator.like = 'pearce')[0m
+SQLite3::SQLException: no such column: creator.like: SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator.like = 'pearce')
+Rendered artworks/search.html.erb within layouts/application (3.6ms)
+Completed   in 12ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: creator.like: SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator.like = 'pearce')):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2174360460_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  [1m[35mArtwork Load (0.4ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator.like = 'pearce')
+SQLite3::SQLException: no such column: creator.like: SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator.like = 'pearce')
+  [1m[36mArtwork Load (0.1ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator.like = 'pearce')[0m
+SQLite3::SQLException: no such column: creator.like: SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%')) AND (creator.like = 'pearce')
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:08:30 -0400 2011
+
+SyntaxError (/Users/brian/code/120SpringTrunk/app/controllers/artworks_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+    respond_to do |format|
+              ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:08:30 -0400 2011
+
+SyntaxError (/Users/brian/code/120SpringTrunk/app/controllers/artworks_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+    respond_to do |format|
+              ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:08:31 -0400 2011
+
+SyntaxError (/Users/brian/code/120SpringTrunk/app/controllers/artworks_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+    respond_to do |format|
+              ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:08:31 -0400 2011
+
+SyntaxError (/Users/brian/code/120SpringTrunk/app/controllers/artworks_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+    respond_to do |format|
+              ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:08:35 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+Completed   in 3ms
+
+NoMethodError (undefined method `like' for "creator":String):
+  app/controllers/artworks_controller.rb:5:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:08:46 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mArtwork Load (1.9ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."creator" LIKE '%pearce%' AND (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))
+Rendered artworks/search.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=title&query=pearce" for 127.0.0.1 at Fri May 06 18:08:53 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"title", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[36mArtwork Load (1.5ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."title" LIKE '%pearce%' AND (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))[0m
+Rendered artworks/search.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=title&query=pearce" for 127.0.0.1 at Fri May 06 18:08:57 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"title", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mArtwork Load (1.5ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."title" LIKE '%pearce%' AND (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))
+Rendered artworks/search.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=title&query=harvest" for 127.0.0.1 at Fri May 06 18:09:00 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"title", "utf8"=>"âœ“", "query"=>"harvest"}
+  [1m[36mArtwork Load (1.8ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."title" LIKE '%harvest%' AND (((((("artworks"."title" LIKE '%harvest%' OR "artworks"."object" LIKE 'harvest') OR "artworks"."creator" LIKE 'harvest') OR "artworks"."recfrom" LIKE 'harvest') OR "artworks"."location" LIKE 'harvest') OR "artworks"."description" LIKE '%harvest%'))[0m
+Rendered artworks/search.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 21ms (Views: 14.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=title&query=harvest" for 127.0.0.1 at Fri May 06 18:09:05 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"title", "utf8"=>"âœ“", "query"=>"harvest"}
+  [1m[35mArtwork Load (1.7ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."title" LIKE '%harvest%' AND (((((("artworks"."title" LIKE '%harvest%' OR "artworks"."object" LIKE 'harvest') OR "artworks"."creator" LIKE 'harvest') OR "artworks"."recfrom" LIKE 'harvest') OR "artworks"."location" LIKE 'harvest') OR "artworks"."description" LIKE '%harvest%'))
+Rendered artworks/search.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 82ms (Views: 15.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:09:10 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2175334680_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:10:03 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[36mArtwork Load (1.4ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."creator" LIKE '%pearce%'[0m
+Rendered artworks/search.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 119ms (Views: 112.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=moon" for 127.0.0.1 at Fri May 06 18:10:09 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"moon"}
+  [1m[35mArtwork Load (1.4ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."creator" LIKE '%moon%'
+Rendered artworks/search.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=title&query=moon" for 127.0.0.1 at Fri May 06 18:10:12 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"title", "utf8"=>"âœ“", "query"=>"moon"}
+  [1m[36mArtwork Load (1.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."title" LIKE '%moon%'[0m
+Rendered artworks/search.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 21ms (Views: 13.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:12:12 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2175101820_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:12:15 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+Completed   in 3ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/artworks_controller.rb:5:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:17:07 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+Completed   in 62ms
+
+NameError (undefined local variable or method `params' for #<Class:0x1037d4ef8>):
+  app/models/artwork.rb:27:in `search'
+  app/controllers/artworks_controller.rb:5:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:17:14 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[36mArtwork Load (1.4ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."creator" LIKE '%pearce%'[0m
+Rendered artworks/search.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:17:19 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2173773220_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=title&query=pearce" for 127.0.0.1 at Fri May 06 18:17:22 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"title", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mArtwork Load (1.3ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."title" LIKE '%pearce%'
+Rendered artworks/search.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 75ms (Views: 69.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=title&query=moon" for 127.0.0.1 at Fri May 06 18:17:24 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"title", "utf8"=>"âœ“", "query"=>"moon"}
+  [1m[36mArtwork Load (2.6ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."title" LIKE '%moon%'[0m
+Rendered artworks/search.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:18:44 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2174837700_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=object&query=paint" for 127.0.0.1 at Fri May 06 18:18:48 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"object", "utf8"=>"âœ“", "query"=>"paint"}
+  [1m[35mArtwork Load (6.2ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."object" LIKE '%paint%'
+Rendered artworks/search.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 35ms (Views: 25.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:18:56 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2176185360_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=creator&query=pearce" for 127.0.0.1 at Fri May 06 18:18:59 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"creator", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[36mArtwork Load (1.4ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."creator" LIKE '%pearce%'[0m
+Rendered artworks/search.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:19:18 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2173934240_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&query=pearce" for 127.0.0.1 at Fri May 06 18:19:22 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "query"=>"pearce"}
+  [1m[35mArtwork Load (2.9ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%pearce%' OR "artworks"."object" LIKE 'pearce') OR "artworks"."creator" LIKE 'pearce') OR "artworks"."recfrom" LIKE 'pearce') OR "artworks"."location" LIKE 'pearce') OR "artworks"."description" LIKE '%pearce%'))
+Rendered artworks/search.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 84ms (Views: 77.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&query=art" for 127.0.0.1 at Fri May 06 18:19:24 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "query"=>"art"}
+  [1m[36mArtwork Load (10.9ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%art%' OR "artworks"."object" LIKE 'art') OR "artworks"."creator" LIKE 'art') OR "artworks"."recfrom" LIKE 'art') OR "artworks"."location" LIKE 'art') OR "artworks"."description" LIKE '%art%'))[0m
+Rendered artworks/search.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 49ms (Views: 34.7ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:21:14 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2173120540_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:21:20 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+  [1m[35mArtwork Load (11.7ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%art%' OR "artworks"."object" LIKE 'art') OR "artworks"."creator" LIKE 'art') OR "artworks"."recfrom" LIKE 'art') OR "artworks"."location" LIKE 'art') OR "artworks"."description" LIKE '%art%'))
+Completed   in 86ms
+
+NoMethodError (undefined method `order_by' for #<ActiveRecord::Relation:0x1036f2e40>):
+  app/controllers/artworks_controller.rb:5:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:23:05 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+Completed   in 6ms
+
+ActiveRecord::StatementInvalid (No attribute named `order` exists for table `artworks`):
+  app/controllers/artworks_controller.rb:5:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:23:06 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+Completed   in 5ms
+
+ActiveRecord::StatementInvalid (No attribute named `order` exists for table `artworks`):
+  app/controllers/artworks_controller.rb:5:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:23:13 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+Rendered artworks/search.html.erb within layouts/application (2.8ms)
+Completed   in 12ms
+
+ActionView::Template::Error (No attribute named `order` exists for table `artworks`):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2174896620_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:24:00 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+Rendered artworks/search.html.erb within layouts/application (3.0ms)
+Completed   in 13ms
+
+ActionView::Template::Error (No attribute named `order` exists for table `artworks`):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2173205900_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (66.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (72.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:24:01 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+Rendered artworks/search.html.erb within layouts/application (2.5ms)
+Completed   in 12ms
+
+ActionView::Template::Error (No attribute named `order` exists for table `artworks`):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2175935280_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:24:05 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+Rendered artworks/search.html.erb within layouts/application (2.4ms)
+Completed   in 11ms
+
+ActionView::Template::Error (No attribute named `order` exists for table `artworks`):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2174159980_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:24:06 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+Rendered artworks/search.html.erb within layouts/application (2.3ms)
+Completed   in 70ms
+
+ActionView::Template::Error (No attribute named `order` exists for table `artworks`):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2176733120_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:24:09 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2175047300_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:24:16 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+Rendered artworks/search.html.erb within layouts/application (2.6ms)
+Completed   in 11ms
+
+ActionView::Template::Error (No attribute named `order` exists for table `artworks`):
+    15:     <th></th>
+    16:   </tr>
+    17: 
+    18: <% @artworks.each do |artwork| %>
+    19:   <tr>
+    20:     <td><%= artwork.object %></td>
+    21:     <td><%= artwork.creator %></td>
+  app/views/artworks/search.html.erb:18:in `_app_views_artworks_search_html_erb___1339917964_2173742900_0'
+  app/controllers/artworks_controller.rb:7:in `search'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:25:26 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+  [1m[36mArtwork Load (12.4ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%art%' OR "artworks"."object" LIKE 'art') OR "artworks"."creator" LIKE 'art') OR "artworks"."recfrom" LIKE 'art') OR "artworks"."location" LIKE 'art') OR "artworks"."description" LIKE '%art%')) ORDER BY "artworks"."title" ASC[0m
+Rendered artworks/search.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 51ms (Views: 34.9ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&filter=all&order=title&query=art" for 127.0.0.1 at Fri May 06 18:25:34 -0400 2011
+  Processing by ArtworksController#search as HTML
+  Parameters: {"filter"=>"all", "utf8"=>"âœ“", "order"=>"title", "query"=>"art"}
+  [1m[35mArtwork Load (12.8ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (((((("artworks"."title" LIKE '%art%' OR "artworks"."object" LIKE 'art') OR "artworks"."creator" LIKE 'art') OR "artworks"."recfrom" LIKE 'art') OR "artworks"."location" LIKE 'art') OR "artworks"."description" LIKE '%art%')) ORDER BY "artworks"."title" DESC
+Rendered artworks/search.html.erb within layouts/application (102.3ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:26:41 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2174851760_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:26:42 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2173792460_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:27:07 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2176477780_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:27:17 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2175348780_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 18:27:27 -0400 2011
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb___1104580741_2174187340_0 at /Users/brian/code/120SpringTrunk/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)

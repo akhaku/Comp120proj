@@ -1,6 +1,8 @@
 Artgallery::Application.routes.draw do
   get "home/index"
 
+  match 'search' => 'artworks#search'
+
   resources :artworks
 
   match 'category' => 'collections#category'

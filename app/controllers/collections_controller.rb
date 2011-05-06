@@ -1,18 +1,3 @@
-class ArtworkDescriptor
-	def initialize(title, creator, date, object, description, recfrom, location, imglink)
-		@title = title
-		@creator = creator
-		@date = date
-		@object = object
-		@description = description
-		@recfrom = recfrom
-		@location = location
-		@imglink = imglink
-	end
-	
-	attr_accessor :title, :creator, :date, :object, :description, :recfrom, :location, :imglink
-end
-
 class CollectionsController < ApplicationController
 	def index
 	end
@@ -21,29 +6,20 @@ class CollectionsController < ApplicationController
 		@type = params[:type]
 		@value = params[:value]
 		
-		case @type
-		when 'artist'
-			dbartworks = Artwork.where("creator = ?", params[:value])
-		when 'donor'
-			dbartworks = Artwork.where("recfrom = ?", params[:value])
-		when 'location'
-			dbartworks = Artwork.where("location = ?", params[:value])
+		unless type.nil?
+  		dbartworks = Artwork.filter_by(params[:type], params[:value])
 		else
 			redirect_to ''
 		end
-
-		@artworks = []
-		dbartworks.each do |artwork|
-			imglink = 'http://s3.amazonaws.com/Art_Images/' + artwork.filename
-			@artworks.push(ArtworkDescriptor.new(artwork.title,
-												artwork.creator,
-												artwork.date,
-												artwork.object,
-												artwork.description,
-												artwork.recfrom,
-												artwork.location,
-												imglink))
-		end
+		
+		@artworks = dbartworks.each do |art|
+		  art.imglink = 'http://s3.amazonaws.com/Art_Images/' + art.filename
+	  end
+		
+		respond_to do |format|
+      format.html # index.html.erb
+      format.json  { render :json => @artworks }
+    end
 	end
 	
 	def artists
