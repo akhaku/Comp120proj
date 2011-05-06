@@ -2572,3 +2572,11 @@ Started GET "/category/artist/?value=Friedlander,%20Lee" for 127.0.0.1 at 2011-0
   [1m[35mArtwork Load (2.0ms)[0m  SELECT "artworks".* FROM "artworks" WHERE (creator = 'Friedlander, Lee')
 Rendered collections/index.html.erb within layouts/application (54.0ms)
 Completed 200 OK in 140ms (Views: 94.0ms | ActiveRecord: 5.0ms)
+DEPRECATION WARNING: ActionController::Dispatcher.new is deprecated, use Rails.application instead. (called from /Users/brian/code/120SpringTrunk/config.ru:6)
+DEPRECATION WARNING: ActionController::Dispatcher.new is deprecated, use Rails.application instead. (called from config.ru:6)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 06 16:28:08 -0400 2011
+  Processing by CollectionsController#index as HTML
+Rendered collections/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
