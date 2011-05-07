@@ -6046,3 +6046,114 @@ DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>
 DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb__1772140099116590135_31104240_944090776582702308 at /home/ammar/comp120/proj/app/views/admin/manage.html.erb:21)
 Rendered admin/manage.html.erb within layouts/cmsapplication (137.3ms)
 Completed 200 OK in 216ms (Views: 143.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/addart" for 127.0.0.1 at 2011-05-07 00:07:06 -0400
+  Processing by ArtsController#new as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered arts/_form.html.erb (54.9ms)
+Rendered arts/new.html.erb within layouts/cmsapplication (66.0ms)
+Completed 200 OK in 271ms (Views: 72.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2011-05-07 00:07:07 -0400
+  Processing by ArtsController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mArtwork Load (27.7ms)[0m  [1mSELECT "artworks".* FROM "artworks" LIMIT 10 OFFSET 0[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM "artworks"
+Rendered arts/index.html.erb within layouts/cmsapplication (47.3ms)
+Completed 200 OK in 305ms (Views: 52.7ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/exhibitions" for 127.0.0.1 at 2011-05-07 00:07:08 -0400
+  Processing by ExhibitionsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mExhibition Load (0.7ms)[0m  SELECT "exhibitions".* FROM "exhibitions" LIMIT 20 OFFSET 0
+Rendered exhibitions/index.html.erb within layouts/cmsapplication (7.5ms)
+Completed 200 OK in 237ms (Views: 15.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/exhibitions/new" for 127.0.0.1 at 2011-05-07 00:07:11 -0400
+  Processing by ExhibitionsController#new as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered exhibitions/_form.html.erb (183.9ms)
+Rendered exhibitions/new.html.erb within layouts/cmsapplication (193.1ms)
+Completed 200 OK in 399ms (Views: 199.4ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/exhibitions" for 127.0.0.1 at 2011-05-07 00:07:46 -0400
+  Processing by ExhibitionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nVpmlSaphkY3lM3Qxv7i14WZQptX4w9IkhYQxU4B7ZY=", "exhibition"=>{"name"=>"Test exhibition", "open(1i)"=>"2011", "open(2i)"=>"8", "open(3i)"=>"7", "close(1i)"=>"2014", "close(2i)"=>"6", "close(3i)"=>"9", "opening(1i)"=>"1", "opening(2i)"=>"1", "opening(3i)"=>"1", "opening(4i)"=>"", "opening(5i)"=>"", "opening_end(1i)"=>"1", "opening_end(2i)"=>"1", "opening_end(3i)"=>"1", "opening_end(4i)"=>"", "opening_end(5i)"=>"", "description"=>"test", "location"=>"Tisch Gallery"}, "commit"=>"Create Exhibition"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "exhibitions" WHERE ("exhibitions"."name" = 'Test exhibition') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "exhibitions" WHERE ("exhibitions"."filename" IS NULL) LIMIT 1
+Rendered exhibitions/_form.html.erb (154.9ms)
+Rendered exhibitions/new.html.erb within layouts/cmsapplication (164.8ms)
+Completed 200 OK in 474ms (Views: 171.8ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/exhibitions" for 127.0.0.1 at 2011-05-07 00:07:59 -0400
+  Processing by ExhibitionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nVpmlSaphkY3lM3Qxv7i14WZQptX4w9IkhYQxU4B7ZY=", "exhibition"=>{"name"=>"Test exhibition", "open(1i)"=>"2011", "open(2i)"=>"8", "open(3i)"=>"7", "close(1i)"=>"2014", "close(2i)"=>"6", "close(3i)"=>"9", "opening(1i)"=>"1", "opening(2i)"=>"1", "opening(3i)"=>"1", "opening(4i)"=>"00", "opening(5i)"=>"00", "opening_end(1i)"=>"1", "opening_end(2i)"=>"1", "opening_end(3i)"=>"1", "opening_end(4i)"=>"00", "opening_end(5i)"=>"00", "description"=>"test", "location"=>"Tisch Gallery", "filename"=>"distler.png"}, "commit"=>"Create Exhibition"}
+  [1m[36mUser Load (11.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "exhibitions" WHERE ("exhibitions"."name" = 'Test exhibition') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "exhibitions" WHERE ("exhibitions"."filename" = 'distler.png') LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "exhibitions" ("name", "open", "close", "description", "location", "image1", "image2", "image3", "image4", "image5", "opening", "filename", "opening_end", "created_at", "updated_at") VALUES ('Test exhibition', '2011-08-07', '2014-06-09', 'test', 'Tisch Gallery', NULL, NULL, NULL, NULL, NULL, '0001-01-01 00:00:00.000000', 'distler.png', '0001-01-01 00:00:00.000000', '2011-05-07 04:07:59.634195', '2011-05-07 04:07:59.634195')
+Redirected to http://localhost:3000/exhibitions/1
+Completed 302 Found in 303ms
+
+
+Started POST "/exhibitions" for 127.0.0.1 at 2011-05-07 00:07:59 -0400
+  Processing by ExhibitionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nVpmlSaphkY3lM3Qxv7i14WZQptX4w9IkhYQxU4B7ZY=", "exhibition"=>{"name"=>"Test exhibition", "open(1i)"=>"2011", "open(2i)"=>"8", "open(3i)"=>"7", "close(1i)"=>"2014", "close(2i)"=>"6", "close(3i)"=>"9", "opening(1i)"=>"1", "opening(2i)"=>"1", "opening(3i)"=>"1", "opening(4i)"=>"00", "opening(5i)"=>"00", "opening_end(1i)"=>"1", "opening_end(2i)"=>"1", "opening_end(3i)"=>"1", "opening_end(4i)"=>"00", "opening_end(5i)"=>"00", "description"=>"test", "location"=>"Tisch Gallery", "filename"=>"distler.png"}, "commit"=>"Create Exhibition"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "exhibitions" WHERE ("exhibitions"."name" = 'Test exhibition') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "exhibitions" WHERE ("exhibitions"."filename" = 'distler.png') LIMIT 1[0m
+Rendered exhibitions/_form.html.erb (70.7ms)
+Rendered exhibitions/new.html.erb within layouts/cmsapplication (81.6ms)
+Completed 200 OK in 345ms (Views: 87.7ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/exhibitions" for 127.0.0.1 at 2011-05-07 00:08:07 -0400
+  Processing by ExhibitionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nVpmlSaphkY3lM3Qxv7i14WZQptX4w9IkhYQxU4B7ZY=", "exhibition"=>{"name"=>"Test exhibition3", "open(1i)"=>"2011", "open(2i)"=>"8", "open(3i)"=>"7", "close(1i)"=>"2014", "close(2i)"=>"6", "close(3i)"=>"9", "opening(1i)"=>"1", "opening(2i)"=>"1", "opening(3i)"=>"1", "opening(4i)"=>"00", "opening(5i)"=>"00", "opening_end(1i)"=>"1", "opening_end(2i)"=>"1", "opening_end(3i)"=>"1", "opening_end(4i)"=>"00", "opening_end(5i)"=>"00", "description"=>"test", "location"=>"Tisch Gallery"}, "commit"=>"Create Exhibition"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "exhibitions" WHERE ("exhibitions"."name" = 'Test exhibition3') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "exhibitions" WHERE ("exhibitions"."filename" IS NULL) LIMIT 1
+Rendered exhibitions/_form.html.erb (61.5ms)
+Rendered exhibitions/new.html.erb within layouts/cmsapplication (70.1ms)
+Completed 200 OK in 323ms (Views: 77.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 00:08:11 -0400
+  Processing by ToursController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (1.0ms)[0m  SELECT "tours".* FROM "tours"
+Rendered tours/index.html.erb within layouts/cmsapplication (26.3ms)
+Completed 200 OK in 257ms (Views: 34.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/tours/new" for 127.0.0.1 at 2011-05-07 00:08:16 -0400
+  Processing by ToursController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered tours/_form.html.erb (18.2ms)
+Rendered tours/new.html.erb within layouts/cmsapplication (21.1ms)
+Completed   in 244ms
+
+ActionView::Template::Error (undefined method `artwork_id' for #<Tour:0x00000004725d90>):
+    14: <% 5.times do%>
+    15:   <div class="field">
+    16:     <%= f.label :artwork_id %><br />
+    17:     <%= f.text_field :artwork_id %>
+    18:   </div>
+    19:   <div class="field">
+    20:     <%= f.label :position %><br />
+  app/views/tours/_form.html.erb:17:in `block (2 levels) in _app_views_tours__form_html_erb___3348739456265472434_37065900__2274371464214697373'
+  app/views/tours/_form.html.erb:14:in `times'
+  app/views/tours/_form.html.erb:14:in `block in _app_views_tours__form_html_erb___3348739456265472434_37065900__2274371464214697373'
+  app/views/tours/_form.html.erb:1:in `_app_views_tours__form_html_erb___3348739456265472434_37065900__2274371464214697373'
+  app/views/tours/new.html.erb:3:in `_app_views_tours_new_html_erb__731427603039957133_37120180_944090776582702308'
+
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.7ms)
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.8ms)
