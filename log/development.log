@@ -5204,3 +5204,694 @@ Migrating to Addsuper (20110507035755)
   [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("users")
   [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
   [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Kitchen Wall, Alabama, Farmstead, 1936') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of James Agee, 1937') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Doorway, 204 West 13th Street, New York City, around 1931') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lunchroom Buddies, New York City, 1931') LIMIT 1[0m
+  [1m[35mSQL (3.0ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Stamped Tin Relic, New York, 1930') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tin False Front Building, Moundville, Alabama, 1936') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ruin of Tabby (Shell) Construction, St. Marys, Georgia, 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Dock Workers, Havana, 1932') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Kimiko Powers') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Parabola Optica') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'El Sistema Nervioso del Gran Simpatico (greater sympathetic nervous system)') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'La Buena Fama Durmiendo (Good Reputation Sleeping)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'El Eclipse (Sabanas)') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'El Ensuena (The Daydream)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Un Poco Alegre y Graciosa (Somewhat Gay and Graceful)') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sed Publica (Public Thirst)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'La Quema Tres (Kiln Number Three)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Saratoga Springs, New York, 1931') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Walker Evans: Selected Photographs') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Maine Pump, 1933') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Breakfast Room at Belle Grove Plantation, White Chapel, Louisiana, 1935') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Minstrel Poster, Alabama, 1936') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Shoe Shine Sign in Southern Town') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Main Street, Ossining, New York, 1932') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Penny Picture Display, Savannah, 1936') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Plane over Bull - Kansasa City, Missouri, 1965') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Parsons School of Design, Costume Party, 1972') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Parsonsi School of Design, Costume Party, 1972') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lovers in a Doorway - Houston, Tx. 1959') LIMIT 1[0m
+  [1m[35mSQL (33.0ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Formulation: Articulation') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Formulation: Articulation') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Formulation: Articulation') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Formulation: Articulation') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Boats on the Seine') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Subway No. 24') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Greek Lekythos') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Route 12 Wisconsin 1963') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sparky and Cowboy, Schereville, Indiana, 1965-66') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Petite Fille aux Feuilles Mortes, Paris') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lella, Bretagne, 1948') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tramps Puesta (Set Trap)') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tramps Puesta (Set Trap)') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Los Agachados (The Crouched Ones)') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Barda de Panteon (Cemetary Wall)') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Obrero en Huelga, Asesinado (Striking Worker, Assassinated)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tumba Reciente (Fresh Grave)') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Paisage Inventado (Invented Landscape)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lee Ave - Butte, Montana, 1970') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ritual Vessel') LIMIT 1
+  [1m[36mSQL (25.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'La Ribay, 1 May 1886') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Fabric Fragment') LIMIT 1
+  [1m[36mSQL (20.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Meleager Kills the Calydonian Boar (from Ovids Metamorphoses)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Daughters of Minyas Refuse to Acknowledge the God, Bacchus (from Ovids Metamorphoses)') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Deucalion and Pyrrha create a New Human Race (from Ovids Metamorphoses)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Meleager Kills the Calydonian Boar (from Ovidis iMetamorphosesi)') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Daughters of Minyas Refuse to Acknowledge the God, Bacchus (from Ovidis iMetamorphosesi)') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Deucalion and Pyrrha create a New Human Race (from Ovidis iMetamorphosesi)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Evolving Forms in Landscape') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Head of child') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Standing Priest / Noble with Headdress (Aztec Stone Figure)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Seated Mother with twins') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Straws II') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Bacchus #20') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Small Sea Wall II') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Forced March to the Front between Lonie and Mitulen, Poland') LIMIT 1
+  [1m[36mSQL (7.2ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Figure in Skirt)') LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (two part sculpture)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Postmaster Brown, Old Rag, Virginia, 1935') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Arthur Rothstein - portfolio of 30 photographs') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Girl at Gees Bend, Alabama 1937') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Vernon Evans, migrant to Oregon from South Dakota 1936') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Migrant Family, Oklahoma 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Dust Storm, Cimarron County, Oklahoma 1936') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Skull, Badlands, South Dakota 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Minnie Knox, Garrett County, Maryland 1937') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Migrant Worker, Visalia, California 1940') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'John Dudeck, Dalton, New York 1937') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Flood Victim, Missouri 1938') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Mississippi River Flood, St. Louis, Missouri 1943') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Agate, Nebraska 1939') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sheepherders Camp, Montana 1939') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Hotel de Paris, exterior, Georgetown, Colorado 1939') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Shoeshine Man, New York City 1937') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Gamblers, Las Vegas, Nevada 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Pool Hall, Culp, Illinois 1940') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Boy with chicken, Hungjao, China 1945') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Burma Road 1945') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Famine Victim, Hengyang, China 1946') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Burial of Famine Victim, Hengyang, China 1946') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Coal Miners, Wales 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Young Coal Miner, Wales 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Farmers in the market, Tocco, Italy 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'John Marin in his studio, Hoboken, New Jersey 1949') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'American Soldiers in a Nightclub, Vienna, Austria 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'At a Charity Ball, New York City 1951') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rockland, Maine 1937') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Flight into Egypt, (one of 17 cuts from the series The Life of the Virgin)') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Postmaster Brown, Old Rag, Virginia, 1935') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Arthur Rothstein - portfolio of 30 photographs') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Girl at Geeis Bend, Alabama 1937') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Vernon Evans, migrant to Oregon from South Dakota 1936') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Migrant Family, Oklahoma 1936') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Dust Storm, Cimarron County, Oklahoma 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Skull, Badlands, South Dakota 1936') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Minnie Knox, Garrett County, Maryland 1937') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Migrant Worker, Visalia, California 1940') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'John Dudeck, Dalton, New York 1937') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Flood Victim, Missouri 1938') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Mississippi River Flood, St. Louis, Missouri 1943') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Agate, Nebraska 1939') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sheepherderis Camp, Montana 1939') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Hotel de Paris, exterior, Georgetown, Colorado 1939') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Shoeshine Man, New York City 1937') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Gamblers, Las Vegas, Nevada 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Pool Hall, Culp, Illinois 1940') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Boy with chicken, Hungjao, China 1945') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Burma Road 1945') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Famine Victim, Hengyang, China 1946') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Burial of Famine Victim, Hengyang, China 1946') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Coal Miners, Wales 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Young Coal Miner, Wales 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Farmers in the market, Tocco, Italy 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'John Marin in his studio, Hoboken, New Jersey 1949') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'American Soldiers in a Nightclub, Vienna, Austria 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'At a Charity Ball, New York City 1951') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rockland, Maine 1937') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Flight into Egypt, (one of 17 cuts from the series iThe Life of the Virgini)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Roman statuette (male)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Olmec Head') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Mexican Mirror Back') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Machica Pectoral (Lomangera)') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'View of Tufts College in 1892') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lady with Pomegranates') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Greek Geometric Horse') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Head') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Bogoria') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Planar Mountain') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Little Fascist') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Visit') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Porpianong (Senufo Wood Figure of a Hornbill)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Head of Hermes Propylaios') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lake George Landscape, Late Summer') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Standing Woman') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Long Island Landscape') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ph.D.') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Harvest Moon') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Landscape-Southampton Hills') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'From My Studio') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Snake River, New Hampshire') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Julius Caesar') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Un Poco Alegre Y Graciosa') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'La de las Bellas Artes') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Milk Drop Coronet') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Bullet Through the Balloons') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Forced March to the Front between Lonie and Mitulen, Poland') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lima 89, (Duplicate)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Westport 87 (Duplicate)') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Female Nude') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Male Portrait') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ace of Diamonds') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Gate 14') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Les bords de lAiguerbron a Lourmarin') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Les bords de liAiguerbron a Lourmarin') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Two Ancient Chinese Tales-Blue and Red and Yellow Equals White') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Spacescape') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Heightened Perspectives, Stonehenge #2, Wiltshire, England') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Heightened Perspectives, Cherhill Horse, Wiltshire, England') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Heightened Perspectives, Lane Manned, N.Y.C., New York') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Spanish Harlem') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Hand, Chatham') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Church Steeple, Falmouth') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Trusty on a Mule') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Aerial Target (Dart) Shot Down in Ordinance Area, Wendover Air Base, Utah') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Aerial Target (iDarti) Shot Down in Ordinance Area, Wendover Air Base, Utah') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Cloudburst, Nuclear Test Site, Nevada') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Best in Hair Cut, Barber Board') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Red Palm') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Orange Shapes in Frame') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Spring Swans') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rwandan Hutu Refugees waiting for medical attention, Tanzania') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Evacuation of Jews, Skanderia, Sarajevo, Bosnia') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Worm Stone') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'question?') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ceremonial Mask') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Zeus') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Canoe') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Walking Man No. 3') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'JFK Airport') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Central Park') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Interior') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lettera Narrahira') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Weisser Klang (Roethel 113)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Solitude, 1987') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'First Light, 9/12/01') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Female Nude Seated on Stool') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled, (abstract drawing for sculpture)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Crimson Ground') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (red, yellow, orange, blue an black abstract design)') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (printed in red and green) Edition # 12/100') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Isle au Haut') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Through Natures Window Edition # 21/40') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Through Natureis Window Edition # 21/40') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Homage to Caribs No. 41') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sister Shrieks') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Chrysler Building') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Taughannock Falls #2') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Samurai Warrior') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Hosea Ballou II') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Rev Hosea Ballou') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Ballou Hall on the Hill)') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Coriolanus') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Coriolanus') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Landscape with Boat)') LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Landscape of the Town of Munchen') LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Pan Hermes') LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Dr. Morton Prince') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Despair') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Charles Tufts') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Charles Tufts') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tufts College') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tuftis College') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tufts College in 1888') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Hannah Robinson Tufts') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Switch Engines, Erie Yards, Jersey City') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Sunday Boy') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rough Sport in the Yosemite ( a Fragment)') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Les Becheurs') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Nude Woman)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Kitchen Wall, Alabama, Farmstead, 1936') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of James Agee, 1937') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Doorway, 204 West 13th Street, New York City, around 1931') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lunchroom Buddies, New York City, 1931') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Stamped Tin Relic, New York, 1930') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tin False Front Building, Moundville, Alabama, 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ruin of Tabby (Shell) Construction, St. Marys, Georgia, 1936') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ruin of Tabby (Shell) Construction, St. Maryis, Georgia, 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Dock Workers, Havana, 1932') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Kimiko Powers') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Parabola Optica') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'El Sistema Nervioso del Gran Simpatico (greater sympathetic nervous system)') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'La Buena Fama Durmiendo (Good Reputation Sleeping)') LIMIT 1
+  [1m[36mSQL (27.8ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'El Eclipse (Sabanas)') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'El Ensuena (The Daydream)') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Un Poco Alegre y Graciosa (Somewhat Gay and Graceful)') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sed Publica (Public Thirst)') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'La Quema Tres (Kiln Number Three)') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Saratoga Springs, New York, 1931') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Walker Evans: Selected Photographs') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Maine Pump, 1933') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Breakfast Room at Belle Grove Plantation, White Chapel, Louisiana, 1935') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Minstrel Poster, Alabama, 1936') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Shoe Shine Sign in Southern Town') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Main Street, Ossining, New York, 1932') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Penny Picture Display, Savannah, 1936') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Plane over Bull - Kansasa City, Missouri, 1965') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Parsons School of Design, Costume Party, 1972') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Parsonsi School of Design, Costume Party, 1972') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (22.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lovers in a Doorway - Houston, Tx. 1959') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Formulation: Articulation') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Formulation: Articulation') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Formulation: Articulation') LIMIT 1[0m
+  [1m[35mSQL (20.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Formulation: Articulation') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Boats on the Seine') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Subway No. 24') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Greek Lekythos') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Route 12 Wisconsin 1963') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sparky and Cowboy, Schereville, Indiana, 1965-66') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Petite Fille aux Feuilles Mortes, Paris') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lella, Bretagne, 1948') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tramps Puesta (Set Trap)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tramps Puesta (Set Trap)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Los Agachados (The Crouched Ones)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Barda de Panteon (Cemetary Wall)') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Obrero en Huelga, Asesinado (Striking Worker, Assassinated)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tumba Reciente (Fresh Grave)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Paisage Inventado (Invented Landscape)') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lee Ave - Butte, Montana, 1970') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ritual Vessel') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'La Ribay, 1 May 1886') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Fabric Fragment') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Meleager Kills the Calydonian Boar (from Ovids Metamorphoses)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Daughters of Minyas Refuse to Acknowledge the God, Bacchus (from Ovids Metamorphoses)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Deucalion and Pyrrha create a New Human Race (from Ovids Metamorphoses)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Meleager Kills the Calydonian Boar (from Ovidis iMetamorphosesi)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Daughters of Minyas Refuse to Acknowledge the God, Bacchus (from Ovidis iMetamorphosesi)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Deucalion and Pyrrha create a New Human Race (from Ovidis iMetamorphosesi)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Evolving Forms in Landscape') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Head of child') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Standing Priest / Noble with Headdress (Aztec Stone Figure)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Seated Mother with twins') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Straws II') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Bacchus #20') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Small Sea Wall II') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Forced March to the Front between Lonie and Mitulen, Poland') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Figure in Skirt)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (two part sculpture)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Postmaster Brown, Old Rag, Virginia, 1935') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Arthur Rothstein - portfolio of 30 photographs') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Girl at Gees Bend, Alabama 1937') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Vernon Evans, migrant to Oregon from South Dakota 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Migrant Family, Oklahoma 1936') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Dust Storm, Cimarron County, Oklahoma 1936') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Skull, Badlands, South Dakota 1936') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Minnie Knox, Garrett County, Maryland 1937') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Migrant Worker, Visalia, California 1940') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'John Dudeck, Dalton, New York 1937') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Flood Victim, Missouri 1938') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Mississippi River Flood, St. Louis, Missouri 1943') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Agate, Nebraska 1939') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sheepherders Camp, Montana 1939') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Hotel de Paris, exterior, Georgetown, Colorado 1939') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Shoeshine Man, New York City 1937') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Gamblers, Las Vegas, Nevada 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Pool Hall, Culp, Illinois 1940') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Boy with chicken, Hungjao, China 1945') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Burma Road 1945') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Famine Victim, Hengyang, China 1946') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Burial of Famine Victim, Hengyang, China 1946') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Coal Miners, Wales 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Young Coal Miner, Wales 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Farmers in the market, Tocco, Italy 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'John Marin in his studio, Hoboken, New Jersey 1949') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'American Soldiers in a Nightclub, Vienna, Austria 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'At a Charity Ball, New York City 1951') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rockland, Maine 1937') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Flight into Egypt, (one of 17 cuts from the series The Life of the Virgin)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Postmaster Brown, Old Rag, Virginia, 1935') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Arthur Rothstein - portfolio of 30 photographs') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Girl at Geeis Bend, Alabama 1937') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Vernon Evans, migrant to Oregon from South Dakota 1936') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Migrant Family, Oklahoma 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Dust Storm, Cimarron County, Oklahoma 1936') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Skull, Badlands, South Dakota 1936') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Minnie Knox, Garrett County, Maryland 1937') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Migrant Worker, Visalia, California 1940') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'John Dudeck, Dalton, New York 1937') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Flood Victim, Missouri 1938') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Mississippi River Flood, St. Louis, Missouri 1943') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Agate, Nebraska 1939') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sheepherderis Camp, Montana 1939') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Hotel de Paris, exterior, Georgetown, Colorado 1939') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Shoeshine Man, New York City 1937') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Gamblers, Las Vegas, Nevada 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Pool Hall, Culp, Illinois 1940') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Boy with chicken, Hungjao, China 1945') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Burma Road 1945') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Famine Victim, Hengyang, China 1946') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Burial of Famine Victim, Hengyang, China 1946') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Coal Miners, Wales 1947') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Young Coal Miner, Wales 1947') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Farmers in the market, Tocco, Italy 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'John Marin in his studio, Hoboken, New Jersey 1949') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'American Soldiers in a Nightclub, Vienna, Austria 1947') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'At a Charity Ball, New York City 1951') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rockland, Maine 1937') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Flight into Egypt, (one of 17 cuts from the series iThe Life of the Virgini)') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Hannah Robinson Tufts') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'View of Framingham Common in 1808') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of George Washington') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Landscape with Windmill)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Temple of Neptune, Paestum, from the Views of the Paestumfrom the Views of the Paestum, Plate XVII, Focillon 598)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Temple of Neptune, Paestum, from the iViews of the Paestumifrom the iViews of the Paestumi, Plate XVII, Focillon 598)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Wrought Iron Fences III') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rosemary in Costume') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'View of Venice') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Old Mill Bridge, Portsmouth, NH') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Cyclamen') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Gipsies') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Corsican Washerwomen') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Roman statuette (male)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Olmec Head') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Mexican Mirror Back') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Machica Pectoral (Lomangera)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'View of Tufts College in 1892') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lady with Pomegranates') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Greek Geometric Horse') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Head') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Bogoria') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Planar Mountain') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Little Fascist') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Visit') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Porpianong (Senufo Wood Figure of a Hornbill)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Head of Hermes Propylaios') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lake George Landscape, Late Summer') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Standing Woman') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Long Island Landscape') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ph.D.') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Harvest Moon') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Landscape-Southampton Hills') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'From My Studio') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Snake River, New Hampshire') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Julius Caesar') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Un Poco Alegre Y Graciosa') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'La de las Bellas Artes') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Milk Drop Coronet') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Bullet Through the Balloons') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Forced March to the Front between Lonie and Mitulen, Poland') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lima 89, (Duplicate)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Westport 87 (Duplicate)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Female Nude') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Male Portrait') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ace of Diamonds') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Gate 14') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Les bords de lAiguerbron a Lourmarin') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Les bords de liAiguerbron a Lourmarin') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Two Ancient Chinese Tales-Blue and Red and Yellow Equals White') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Spacescape') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Heightened Perspectives, Stonehenge #2, Wiltshire, England') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Heightened Perspectives, Cherhill Horse, Wiltshire, England') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Heightened Perspectives, Lane Manned, N.Y.C., New York') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Spanish Harlem') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Hand, Chatham') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Church Steeple, Falmouth') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Trusty on a Mule') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Aerial Target (Dart) Shot Down in Ordinance Area, Wendover Air Base, Utah') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Aerial Target (iDarti) Shot Down in Ordinance Area, Wendover Air Base, Utah') LIMIT 1[0m
+  [1m[35mSQL (6.6ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Cloudburst, Nuclear Test Site, Nevada') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Best in Hair Cut, Barber Board') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Red Palm') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Orange Shapes in Frame') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Spring Swans') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rwandan Hutu Refugees waiting for medical attention, Tanzania') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Evacuation of Jews, Skanderia, Sarajevo, Bosnia') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Worm Stone') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'question?') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Ceremonial Mask') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Zeus') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Canoe') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Walking Man No. 3') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'JFK Airport') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Central Park') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Interior') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Lettera Narrahira') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Weisser Klang (Roethel 113)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Solitude, 1987') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'First Light, 9/12/01') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Female Nude Seated on Stool') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled, (abstract drawing for sculpture)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Crimson Ground') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (red, yellow, orange, blue an black abstract design)') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (printed in red and green) Edition # 12/100') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Isle au Haut') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Through Natures Window Edition # 21/40') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Through Natureis Window Edition # 21/40') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Homage to Caribs No. 41') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Sister Shrieks') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Chrysler Building') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Taughannock Falls #2') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Samurai Warrior') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Hosea Ballou II') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Rev Hosea Ballou') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Ballou Hall on the Hill)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Coriolanus') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Coriolanus') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Landscape with Boat)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Landscape of the Town of Munchen') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Pan Hermes') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Dr. Morton Prince') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Despair') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Charles Tufts') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Charles Tufts') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tufts College') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tuftis College') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Tufts College in 1888') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Hannah Robinson Tufts') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of Hannah Robinson Tufts') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'View of Framingham Common in 1808') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Portrait of George Washington') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Landscape with Windmill)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Temple of Neptune, Paestum, from the Views of the Paestumfrom the Views of the Paestum, Plate XVII, Focillon 598)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Temple of Neptune, Paestum, from the iViews of the Paestumifrom the iViews of the Paestumi, Plate XVII, Focillon 598)') LIMIT 1[0m
+  [1m[35mSQL (7.0ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Wrought Iron Fences III') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rosemary in Costume') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'View of Venice') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Old Mill Bridge, Portsmouth, NH') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Cyclamen') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Gipsies') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Corsican Washerwomen') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Switch Engines, Erie Yards, Jersey City') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'The Sunday Boy') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Rough Sport in the Yosemite ( a Fragment)') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Les Becheurs') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT 1 FROM "artworks" WHERE ("artworks"."title" = 'Untitled (Nude Woman)') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@test.com') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@test.com') LIMIT 1[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at", "issuper") VALUES ('test@test.com', '$2a$10$4Wr.nzaCbjy3yeK0Qyg/kOs67TLyugGox974XjtBAdl6jjx2tj9MO', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2011-05-07 04:00:08.211304', '2011-05-07 04:00:08.211304', 't')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tours" ("desc", "order", "created_at", "updated_at", "name") VALUES (NULL, NULL, '2011-05-07 04:00:08.264387', '2011-05-07 04:00:08.264387', 'Sample Tour')[0m
+  [1m[35mArtwork Load (1.3ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 12 LIMIT 1
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (12, 1, NULL, '2011-05-07 04:00:08.445721', '2011-05-07 04:00:08.445721')[0m
+  [1m[35mArtwork Load (1.2ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 14 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (14, 1, NULL, '2011-05-07 04:00:08.460947', '2011-05-07 04:00:08.460947')[0m
+  [1m[35mArtwork Load (1.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 18 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (18, 1, NULL, '2011-05-07 04:00:08.469955', '2011-05-07 04:00:08.469955')[0m
+  [1m[35mArtwork Load (1.4ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 13 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (13, 1, NULL, '2011-05-07 04:00:08.478698', '2011-05-07 04:00:08.478698')[0m
+  [1m[35mArtwork Load (1.2ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 6 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (6, 1, NULL, '2011-05-07 04:00:08.487036', '2011-05-07 04:00:08.487036')[0m
+  [1m[35mArtwork Load (1.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 98 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (98, 1, NULL, '2011-05-07 04:00:08.497986', '2011-05-07 04:00:08.497986')[0m
+  [1m[35mArtwork Load (1.4ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 67 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (67, 1, NULL, '2011-05-07 04:00:08.509176', '2011-05-07 04:00:08.509176')[0m
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-05-07 00:00:50 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 57ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at 2011-05-07 00:00:51 -0400
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-05-07 00:00:56 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nVpmlSaphkY3lM3Qxv7i14WZQptX4w9IkhYQxU4B7ZY=", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (7.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2011-05-07 04:00:56.744222', "current_sign_in_at" = '2011-05-07 04:00:56.744222', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2011-05-07 04:00:56.745836' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 358ms
+
+
+Started GET "/admin" for 127.0.0.1 at 2011-05-07 00:00:56 -0400
+  Processing by AdminController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered admin/index.html.erb within layouts/cmsapplication (8.2ms)
+Completed 200 OK in 262ms (Views: 15.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at 2011-05-07 00:00:57 -0400
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/autocomplete-rails.js" for 127.0.0.1 at 2011-05-07 00:00:57 -0400
+
+ActionController::RoutingError (No route matches "/javascripts/autocomplete-rails.js"):
+  
+
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/exhibitions" for 127.0.0.1 at 2011-05-07 00:01:01 -0400
+  Processing by ExhibitionsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mExhibition Load (0.4ms)[0m  SELECT "exhibitions".* FROM "exhibitions" LIMIT 20 OFFSET 0
+Rendered exhibitions/index.html.erb within layouts/cmsapplication (12.0ms)
+Completed 200 OK in 125ms (Views: 25.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at 2011-05-07 00:01:01 -0400
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/javascripts/autocomplete-rails.js" for 127.0.0.1 at 2011-05-07 00:01:01 -0400
+
+ActionController::RoutingError (No route matches "/javascripts/autocomplete-rails.js"):
+  
+
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 00:01:02 -0400
+  Processing by ToursController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (1.6ms)[0m  SELECT "tours".* FROM "tours"
+Rendered tours/index.html.erb within layouts/cmsapplication (135.3ms)
+Completed 200 OK in 269ms (Views: 141.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at 2011-05-07 00:01:03 -0400
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/javascripts/autocomplete-rails.js" for 127.0.0.1 at 2011-05-07 00:01:03 -0400
+
+ActionController::RoutingError (No route matches "/javascripts/autocomplete-rails.js"):
+  
+
+Rendered /home/ammar/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 00:03:09 -0400
+  Processing by ToursController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (6.3ms)[0m  SELECT "tours".* FROM "tours"
+Rendered tours/index.html.erb within layouts/cmsapplication (28.0ms)
+Completed 200 OK in 254ms (Views: 34.5ms | ActiveRecord: 7.5ms)
