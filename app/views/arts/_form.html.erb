@@ -1,0 +1,28 @@
+<%= semantic_form_for @artwork, :url=>arts_path do |f| %>
+    <% if @artwork.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@artwork.errors.count, "error") %> prohibited this artwork from being saved:</h2>
+
+            <ul>
+            <% @artwork.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+            </ul>
+        </div>
+    <% end %>
+    
+    <%= f.inputs do %>
+        <%= f.input :title, :required => true, :wrapper_html => { :title => "Title of the work of art" } %>
+        <%= f.input :creator, :required => true, :wrapper_html => { :title => "Name of the artist" } %>
+        <%= f.input :object, :required => true, :as => :select, :collection => ["Print", "Print, Photographic", "Drawing", "Sculpture", "Painting", "Jug (Lekythos)", "Vessel", "Cloth Fragment", "Mask", "Pectoral", "Mirror, Hand (Fragment)"], :wrapper_html => { :title => "Type of the work of art" } %>
+        <%= f.input :description, :required => true, :wrapper_html => { :title => "Type of the work of art" } %>
+        <%= f.input :location, :required => true, :wrapper_html => { :title => "Location of the artwork" } %>
+        <%= f.input :notes, :wrapper_html => { :title => "Write any notes about the artwork" } %>
+        <%= f.input :onDisplay, :wrapper_html => { :title => "Check if this artwork is currently on display" } %>
+        <%= f.input :thumbnail, :as => :file, :required => true, :wrapper_html => { :title => "Upload the artwork image" } %>
+    <% end %>
+    
+    <%= f.buttons do %>
+        <%= f.commit_button :button_html => { :class => "primary" } %>
+    <% end %>
+<% end %>

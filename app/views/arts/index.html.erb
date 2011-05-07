@@ -1,0 +1,42 @@
+<h1>All Artworks</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Creator</th>
+    <th>Object</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @artworks.each do |artwork| %>
+  <tr>
+    <td title="<%= escape_javascript artwork.title %> "><%= trimstring(artwork.title,50) %></td>
+    <td><%= artwork.creator %></td>
+    <td><%= artwork.object %></td>
+    <td title="<%= escape_javascript artwork.description %>" ><%= trimstring(artwork.description,50) %></td>
+    <td><%= artwork.location %></td>
+    <!--<td><%= artwork.recfrom %></td>
+    <td><%= artwork.date %></td>
+    <td><%= artwork.filename %></td>
+    <td><%= artwork.notes %></td>
+    <td><%= artwork.onDisplay %></td>
+    <td><%= artwork.thumbnail %></td>
+    <td><%= artwork.lat %></td>
+    <td><%= artwork.lng %></td>-->
+    <td><%= link_to 'Show', arts_path+"/"+artwork.id.to_s %></td>
+    <td><%= link_to 'Edit', edit_art_path(artwork) %></td>
+    <td><%= link_to 'Destroy', arts_path+"/"+artwork.id.to_s, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @artworks %>
+<br />
+<style type="text/css">
+  div#navbar a:nth-child(3){
+    background-color:#CEF6F5;
+}
+</style>

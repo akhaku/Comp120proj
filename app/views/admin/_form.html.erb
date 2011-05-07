@@ -1,0 +1,24 @@
+<%= semantic_form_for @user do |form| %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@user.errors.count, "error") %> prohibited this exhibition from being saved:</h2>
+
+            <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+            </ul>
+        </div>
+    <% end %>
+    
+    <%= form.inputs do %>
+        <%= form.input :email, :required => true, :wrapper_html => { :title => "New User name" } %>
+        <%= form.input :password, :required => true, :wrapper_html => { :title => "New Password" } %>
+        <%= form.input :password_confirmation, :required => true, :wrapper_html => { :title => "Confirm Password" } %>
+        <%= form.input :super, :required => true, :wrapper_html => { :title => "Is this person a super user? I.e., do they have ULTIMATE ACCESS?"} %>
+    <% end %>
+    
+    <%= form.buttons do %>
+        <%= form.commit_button :button_html => { :class => "primary" } %>
+    <% end %>
+<% end %>

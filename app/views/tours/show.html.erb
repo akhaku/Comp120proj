@@ -1,0 +1,55 @@
+<% require 'aws/s3' %>
+
+<script type="text/javascript">
+	alert('go');
+	$('#tour_items').sortable({items:'.item', containment:'parent', axis:'y', update: function() {
+	  	$.post('/tours/sort', 	'_method=put&authenticity_token=123&'+$(this).sortable('serialize'));
+	}});
+</script>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Displaying Tour: "<%= @tour.name %>"</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Creator</th>
+    <th>Location</th>
+	<th>Photo</th>
+  </tr>
+
+	<% AWS::S3::Base.establish_connection!(
+	    :access_key_id     => 'AKIAIWNUCQ3RBDHV6BYA',
+	    :secret_access_key => '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'
+	  )%>
+
+<% @tour.artwork.each do |art| %>
+  <tr class="item" title="<%= art.description %>">
+    <td><%= art.title %></td>
+    <td><%= art.creator %></td>
+    <td><%= art.location %></td>
+	<td>	<% fname = art.filename + '.jpg'%>
+	  <img src ='<%=(AWS::S3::S3Object.url_for(fname,'Art_Images'))%>' alt='[An image of the gallery piece]' width='100px' height='100px' />
+	</td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tour', new_tour_path %>
+<style type="text/css">
+  div#navbar a:nth-child(4){
+    background-color:#CEF6F5;
+}
+</style>
+
+
+<%= link_to 'Edit', edit_tour_path(@tour) %> |
+<%= link_to 'Back', tours_path %>
+<style type="text/css">
+  div#navbar a:nth-child(5){
+    background-color:#CEF6F5;
+}
+</style>
