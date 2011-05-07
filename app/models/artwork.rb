@@ -1,6 +1,16 @@
 class Artwork < ActiveRecord::Base
   attr_accessor :imglink
   
+
+  validates :title, :presence => true
+  validates :creator, :presence => true
+  validates :description, :presence => true
+  #validates :location, :presence => true
+  #validates :thumbnail, :presence => true
+  validates_uniqueness_of :title
+
+  has_many :tour_items
+  has_many :tour, :through => :tour_items
   # This is for getting all pieces where the field is exactly
   # the value parameter. e.g., type = 'artist',
   #                            value = 'Pearce, Charles Sprague' 
