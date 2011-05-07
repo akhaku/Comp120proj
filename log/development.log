@@ -5895,3 +5895,154 @@ Started GET "/tours" for 127.0.0.1 at 2011-05-07 00:03:09 -0400
   [1m[35mTour Load (6.3ms)[0m  SELECT "tours".* FROM "tours"
 Rendered tours/index.html.erb within layouts/cmsapplication (28.0ms)
 Completed 200 OK in 254ms (Views: 34.5ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/addart" for 127.0.0.1 at 2011-05-07 00:04:06 -0400
+  Processing by ArtsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered arts/_form.html.erb (158.8ms)
+Rendered arts/new.html.erb within layouts/cmsapplication (170.0ms)
+Completed 200 OK in 384ms (Views: 176.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2011-05-07 00:04:07 -0400
+  Processing by ArtsController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mArtwork Load (18.3ms)[0m  [1mSELECT "artworks".* FROM "artworks" LIMIT 10 OFFSET 0[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT COUNT(*) FROM "artworks"
+Rendered arts/index.html.erb within layouts/cmsapplication (46.2ms)
+Completed 200 OK in 288ms (Views: 53.6ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-07 00:04:09 -0400
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb__2593775366834790194_40555100_944090776582702308 at /home/ammar/comp120/proj/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-07 00:04:14 -0400
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb__2593775366834790194_37460640_944090776582702308 at /home/ammar/comp120/proj/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-07 00:04:14 -0400
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb__2593775366834790194_31222740_944090776582702308 at /home/ammar/comp120/proj/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/addart" for 127.0.0.1 at 2011-05-07 00:04:16 -0400
+  Processing by ArtsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered arts/_form.html.erb (161.8ms)
+Rendered arts/new.html.erb within layouts/cmsapplication (173.4ms)
+Completed 200 OK in 310ms (Views: 180.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/exhibitions" for 127.0.0.1 at 2011-05-07 00:04:19 -0400
+  Processing by ExhibitionsController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mExhibition Load (0.8ms)[0m  [1mSELECT "exhibitions".* FROM "exhibitions" LIMIT 20 OFFSET 0[0m
+Rendered exhibitions/index.html.erb within layouts/cmsapplication (8.0ms)
+Completed 200 OK in 230ms (Views: 13.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 00:04:22 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (5.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (25.7ms)
+Completed 200 OK in 230ms (Views: 31.5ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/manage" for 127.0.0.1 at 2011-05-07 00:04:23 -0400
+  Processing by AdminController#manage as HTML
+  [1m[35mUser Load (12.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb__1772140099116590135_40259120_944090776582702308 at /home/ammar/comp120/proj/app/views/admin/manage.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb__1772140099116590135_40259120_944090776582702308 at /home/ammar/comp120/proj/app/views/admin/manage.html.erb:21)
+Rendered admin/manage.html.erb within layouts/cmsapplication (37.3ms)
+Completed 200 OK in 210ms (Views: 44.4ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-07 00:04:24 -0400
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb__2593775366834790194_36554720_944090776582702308 at /home/ammar/comp120/proj/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-07 00:04:24 -0400
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb__2593775366834790194_40746920_944090776582702308 at /home/ammar/comp120/proj/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manage" for 127.0.0.1 at 2011-05-07 00:06:06 -0400
+  Processing by AdminController#manage as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb__1772140099116590135_30239820_944090776582702308 at /home/ammar/comp120/proj/app/views/admin/manage.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb__1772140099116590135_30239820_944090776582702308 at /home/ammar/comp120/proj/app/views/admin/manage.html.erb:21)
+Rendered admin/manage.html.erb within layouts/cmsapplication (139.8ms)
+Completed 200 OK in 218ms (Views: 147.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2011-05-07 00:06:07 -0400
+  Processing by AdminController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered admin/index.html.erb within layouts/cmsapplication (7.2ms)
+Completed 200 OK in 186ms (Views: 15.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/addart" for 127.0.0.1 at 2011-05-07 00:06:09 -0400
+  Processing by ArtsController#new as HTML
+  [1m[36mUser Load (9.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered arts/_form.html.erb (50.3ms)
+Rendered arts/new.html.erb within layouts/cmsapplication (63.4ms)
+Completed 200 OK in 293ms (Views: 70.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/addart" for 127.0.0.1 at 2011-05-07 00:06:09 -0400
+  Processing by ArtsController#new as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered arts/_form.html.erb (141.2ms)
+Rendered arts/new.html.erb within layouts/cmsapplication (150.6ms)
+Completed 200 OK in 351ms (Views: 157.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2011-05-07 00:06:11 -0400
+  Processing by ArtsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mArtwork Load (20.6ms)[0m  SELECT "artworks".* FROM "artworks" LIMIT 10 OFFSET 0
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT COUNT(*) FROM "artworks"[0m
+Rendered arts/index.html.erb within layouts/cmsapplication (138.3ms)
+Completed 200 OK in 363ms (Views: 144.1ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/exhibitions" for 127.0.0.1 at 2011-05-07 00:06:12 -0400
+  Processing by ExhibitionsController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mExhibition Load (0.7ms)[0m  [1mSELECT "exhibitions".* FROM "exhibitions" LIMIT 20 OFFSET 0[0m
+Rendered exhibitions/index.html.erb within layouts/cmsapplication (9.7ms)
+Completed 200 OK in 107ms (Views: 17.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 00:06:13 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (5.3ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (148.4ms)
+Completed 200 OK in 259ms (Views: 159.0ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/manage" for 127.0.0.1 at 2011-05-07 00:06:14 -0400
+  Processing by AdminController#manage as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb__1772140099116590135_31104240_944090776582702308 at /home/ammar/comp120/proj/app/views/admin/manage.html.erb:7)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb__1772140099116590135_31104240_944090776582702308 at /home/ammar/comp120/proj/app/views/admin/manage.html.erb:21)
+Rendered admin/manage.html.erb within layouts/cmsapplication (137.3ms)
+Completed 200 OK in 216ms (Views: 143.6ms | ActiveRecord: 1.5ms)
