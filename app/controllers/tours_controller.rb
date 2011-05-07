@@ -2,6 +2,25 @@ class ToursController < CmsapplicationController
   def index
     @tours = Tour.all
   end
+  
+  def tour_items
+    @tour_item = TourItem.new
+    @tours = Tour.all
+    @artworks = Artwork.all
+    
+    respond_to do |format|
+      format.html
+    end
+  end
+  
+  def create_tour_item
+    @tour_item = TourItem.new(params[:touritem])
+    if @tour_item.save
+      redirect_to(tours_path)
+    else
+      render :action => "tour_item"
+    end
+  end
 
   # GET /tours/1
   # GET /tours/1.xml

@@ -6321,3 +6321,766 @@ DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>
 DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb__1772140099116590135_40595100_944090776582702308 at /home/ammar/comp120/proj/app/views/admin/manage.html.erb:21)
 Rendered admin/manage.html.erb within layouts/cmsapplication (40.6ms)
 Completed 200 OK in 284ms (Views: 46.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-07 12:08:02 -0400
+  Processing by CollectionsController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_collections_index_html_erb__81184925_19910590_394306374 at /Users/Joe/Rails/copy/Comp120proj/app/views/collections/index.html.erb:3)
+Rendered collections/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2011-05-07 12:08:15 -0400
+  Processing by AdminController#index as HTML
+Completed   in 61ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-05-07 12:08:15 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 73ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-05-07 12:08:28 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IPNhQboUiOWi3XNFh3QJSmJDur8cr3ffo7oH1ULc1sI=", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36mAREL (0.9ms)[0m  [1mUPDATE "users" SET "remember_created_at" = '2011-05-07 16:08:29.185979', "updated_at" = '2011-05-07 16:08:29.186357' WHERE "users"."id" = 1[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2011-05-07 16:08:29.226903', "sign_in_count" = 2, "updated_at" = '2011-05-07 16:08:29.227540' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 332ms
+
+
+Started GET "/admin" for 127.0.0.1 at 2011-05-07 12:08:29 -0400
+  Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered admin/index.html.erb within layouts/cmsapplication (5.9ms)
+Completed 200 OK in 68ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:08:31 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (20.4ms)
+Completed 200 OK in 169ms (Views: 27.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tours/new" for 127.0.0.1 at 2011-05-07 12:08:34 -0400
+  Processing by ToursController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered tours/_form.html.erb (12.4ms)
+Rendered tours/new.html.erb within layouts/cmsapplication (15.4ms)
+Completed   in 137ms
+
+ActionView::Template::Error (undefined method `artwork_id' for #<Tour:0x29c424c>):
+    14: <% 5.times do%>
+    15:   <div class="field">
+    16:     <%= f.label :artwork_id %><br />
+    17:     <%= f.text_field :artwork_id %>
+    18:   </div>
+    19:   <div class="field">
+    20:     <%= f.label :position %><br />
+  app/views/tours/_form.html.erb:17:in `block (2 levels) in _app_views_tours__form_html_erb___529003602_20888780_583017272'
+  app/views/tours/_form.html.erb:14:in `times'
+  app/views/tours/_form.html.erb:14:in `block in _app_views_tours__form_html_erb___529003602_20888780_583017272'
+  app/views/tours/_form.html.erb:1:in `_app_views_tours__form_html_erb___529003602_20888780_583017272'
+  app/views/tours/new.html.erb:3:in `_app_views_tours_new_html_erb___303625871_20894500_394306374'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.5ms)
+
+
+Started GET "/exhibitions" for 127.0.0.1 at 2011-05-07 12:08:40 -0400
+  Processing by ExhibitionsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mExhibition Load (1.4ms)[0m  SELECT "exhibitions".* FROM "exhibitions" LIMIT 20 OFFSET 0
+Rendered exhibitions/index.html.erb within layouts/cmsapplication (37.2ms)
+Completed 200 OK in 157ms (Views: 45.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2011-05-07 12:08:41 -0400
+  Processing by ArtsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mArtwork Load (14.8ms)[0m  SELECT "artworks".* FROM "artworks" LIMIT 10 OFFSET 0
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT COUNT(*) FROM "artworks"[0m
+Rendered arts/index.html.erb within layouts/cmsapplication (38.0ms)
+Completed 200 OK in 188ms (Views: 45.4ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/manage" for 127.0.0.1 at 2011-05-07 12:16:45 -0400
+  Processing by AdminController#manage as HTML
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb___998130199_21415590_693997003 at /Users/Joe/Rails/copy/Comp120proj/app/views/admin/manage.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb___998130199_21415590_693997003 at /Users/Joe/Rails/copy/Comp120proj/app/views/admin/manage.html.erb:18)
+Rendered admin/manage.html.erb within layouts/cmsapplication (67.4ms)
+Completed 200 OK in 116ms (Views: 75.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:16:51 -0400
+  Processing by ToursController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+Rendered tours/index.html.erb within layouts/cmsapplication (21.1ms)
+Completed 200 OK in 170ms (Views: 28.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/tours/new" for 127.0.0.1 at 2011-05-07 12:16:55 -0400
+  Processing by ToursController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered tours/_form.html.erb (82.0ms)
+Rendered tours/new.html.erb within layouts/cmsapplication (85.0ms)
+Completed   in 167ms
+
+ActionView::Template::Error (undefined method `artwork_id' for #<Tour:0x17f8a54>):
+    14: <% 5.times do%>
+    15:   <div class="field">
+    16:     <%= f.label :artwork_id %><br />
+    17:     <%= f.text_field :artwork_id %>
+    18:   </div>
+    19:   <div class="field">
+    20:     <%= f.label :position %><br />
+  app/views/tours/_form.html.erb:17:in `block (2 levels) in _app_views_tours__form_html_erb__808821500_12414010_830454906'
+  app/views/tours/_form.html.erb:14:in `times'
+  app/views/tours/_form.html.erb:14:in `block in _app_views_tours__form_html_erb__808821500_12414010_830454906'
+  app/views/tours/_form.html.erb:1:in `_app_views_tours__form_html_erb__808821500_12414010_830454906'
+  app/views/tours/new.html.erb:3:in `_app_views_tours_new_html_erb___508703676_12467150_693997003'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.7ms)
+
+
+Started GET "/tours/" for 127.0.0.1 at 2011-05-07 12:19:54 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (61.1ms)
+Completed 200 OK in 141ms (Views: 68.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:19:56 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (60.4ms)
+Completed 200 OK in 139ms (Views: 66.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:21:06 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (20.0ms)
+Completed 200 OK in 98ms (Views: 26.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tours/new" for 127.0.0.1 at 2011-05-07 12:21:09 -0400
+  Processing by ToursController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered tours/_form.html.erb (17.4ms)
+Rendered tours/new.html.erb within layouts/cmsapplication (25.8ms)
+Completed 200 OK in 109ms (Views: 32.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:21:13 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.2ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1
+Completed   in 117ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:9:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started GET "/tours/1/edit" for 127.0.0.1 at 2011-05-07 12:21:59 -0400
+  Processing by ToursController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."id" = 1 LIMIT 1
+  [1m[36mTourItem Load (2.1ms)[0m  [1mSELECT "tour_items".* FROM "tour_items" WHERE "tour_items"."tour_id" = 1[0m
+  [1m[35mArtwork Load (2.5ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 12 LIMIT 1
+  [1m[36mArtwork Load (2.2ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 14 LIMIT 1[0m
+  [1m[35mArtwork Load (2.2ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 18 LIMIT 1
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 13 LIMIT 1[0m
+  [1m[35mArtwork Load (2.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 6 LIMIT 1
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 98 LIMIT 1[0m
+  [1m[35mArtwork Load (2.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 67 LIMIT 1
+Rendered tours/edit.html.erb within layouts/cmsapplication (2269.9ms)
+Completed 200 OK in 2428ms (Views: 2259.9ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/tours/1/edit" for 127.0.0.1 at 2011-05-07 12:22:13 -0400
+  Processing by ToursController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."id" = 1 LIMIT 1
+  [1m[36mTourItem Load (2.1ms)[0m  [1mSELECT "tour_items".* FROM "tour_items" WHERE "tour_items"."tour_id" = 1[0m
+  [1m[35mArtwork Load (2.3ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 12 LIMIT 1
+  [1m[36mArtwork Load (2.2ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 14 LIMIT 1[0m
+  [1m[35mArtwork Load (2.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 18 LIMIT 1
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 13 LIMIT 1[0m
+  [1m[35mArtwork Load (2.0ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 6 LIMIT 1
+  [1m[36mArtwork Load (2.2ms)[0m  [1mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 98 LIMIT 1[0m
+  [1m[35mArtwork Load (2.1ms)[0m  SELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = 67 LIMIT 1
+Rendered tours/edit.html.erb within layouts/cmsapplication (168.1ms)
+Completed 200 OK in 321ms (Views: 157.6ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/manage" for 127.0.0.1 at 2011-05-07 12:24:29 -0400
+  Processing by AdminController#manage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb___998130199_20227050_693997003 at /Users/Joe/Rails/copy/Comp120proj/app/views/admin/manage.html.erb:4)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_admin_manage_html_erb___998130199_20227050_693997003 at /Users/Joe/Rails/copy/Comp120proj/app/views/admin/manage.html.erb:18)
+Rendered admin/manage.html.erb within layouts/cmsapplication (23.6ms)
+Completed 200 OK in 131ms (Views: 30.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/arts" for 127.0.0.1 at 2011-05-07 12:24:32 -0400
+  Processing by ArtsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mArtwork Load (15.0ms)[0m  [1mSELECT "artworks".* FROM "artworks" LIMIT 10 OFFSET 0[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT COUNT(*) FROM "artworks"
+Rendered arts/index.html.erb within layouts/cmsapplication (38.2ms)
+Completed 200 OK in 195ms (Views: 46.2ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/exhibitions" for 127.0.0.1 at 2011-05-07 12:24:34 -0400
+  Processing by ExhibitionsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mExhibition Load (1.4ms)[0m  SELECT "exhibitions".* FROM "exhibitions" LIMIT 20 OFFSET 0
+Rendered exhibitions/index.html.erb within layouts/cmsapplication (37.8ms)
+Completed 200 OK in 117ms (Views: 45.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:24:38 -0400
+  Processing by ToursController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+Rendered tours/index.html.erb within layouts/cmsapplication (20.4ms)
+Completed 200 OK in 100ms (Views: 27.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:26:29 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.2ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1
+Completed   in 129ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:9:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:27:30 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.2ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1
+Completed   in 55ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:9:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:27:42 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.2ms)[0m  SELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1
+Completed   in 112ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:9:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:28:18 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.2ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1[0m
+Completed   in 128ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:9:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/tours/" for 127.0.0.1 at 2011-05-07 12:28:22 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.8ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (20.4ms)
+Completed 200 OK in 143ms (Views: 28.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:28:25 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.2ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1[0m
+Completed   in 116ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:9:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:28:48 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[35mUser Load (47.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.2ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1[0m
+Completed   in 102ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:9:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:29:41 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.2ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1[0m
+Completed   in 117ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:14:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:29:46 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (20.0ms)
+Completed 200 OK in 139ms (Views: 26.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:30:22 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (59.5ms)
+Completed   in 182ms
+
+ActionView::Template::Error (undefined local variable or method `tour_items_tour_path' for #<#<Class:0x26934c4>:0x26cf7e4>):
+    21: <br />
+    22: 
+    23: <%= link_to 'New Tour', new_tour_path %>
+    24: <%= link_to 'Add Tour Item', tour_items_tour_path %>
+    25: <style type="text/css">
+    26:   div#navbar a:nth-child(5){
+    27:     background-color:#CEF6F5;
+  app/views/tours/index.html.erb:24:in `_app_views_tours_index_html_erb___359068311_22026510__518693666'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.8ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:30:31 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (29.2ms)
+Completed   in 147ms
+
+ActionView::Template::Error (undefined local variable or method `tour_items_tours_path' for #<#<Class:0x2a27bd0>:0x2a26dfc>):
+    21: <br />
+    22: 
+    23: <%= link_to 'New Tour', new_tour_path %>
+    24: <%= link_to 'Add Tour Item', tour_items_tours_path %>
+    25: <style type="text/css">
+    26:   div#navbar a:nth-child(5){
+    27:     background-color:#CEF6F5;
+  app/views/tours/index.html.erb:24:in `_app_views_tours_index_html_erb___359068311_22098410__518693666'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:30:51 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (20.0ms)
+Completed 200 OK in 140ms (Views: 27.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:30:53 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.2ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1[0m
+Completed   in 118ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:14:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:31:35 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.2ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1[0m
+Completed   in 56ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:14:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:31:39 -0400
+  Processing by ToursController#show as HTML
+  Parameters: {"id"=>"tour_items"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.2ms)[0m  [1mSELECT "tours".* FROM "tours" WHERE "tours"."id" = 0 LIMIT 1[0m
+Completed   in 121ms
+
+ActiveRecord::RecordNotFound (Couldn't find Tour with ID=tour_items):
+  app/controllers/tours_controller.rb:14:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:32:06 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Completed   in 58ms
+
+NameError (uninitialized constant ToursController::Artworks):
+  app/controllers/tours_controller.rb:8:in `tour_items'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (63.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.6ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:32:52 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (512.8ms)[0m  SELECT "artworks".* FROM "artworks"
+Completed   in 634ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.3ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:35:41 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+  [1m[36mArtwork Load (469.9ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+Completed   in 636ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  app/controllers/tours_controller.rb:10:in `tour_items'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.1ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:37:01 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (475.4ms)[0m  SELECT "artworks".* FROM "artworks"
+Completed   in 667ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  app/controllers/tours_controller.rb:11:in `tour_items'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.2ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:37:04 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+  [1m[36mArtwork Load (473.8ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+Completed   in 653ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  app/controllers/tours_controller.rb:11:in `tour_items'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.3ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:42:01 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (527.9ms)[0m  SELECT "artworks".* FROM "artworks"
+Completed   in 664ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  app/controllers/tours_controller.rb:11:in `tour_items'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.2ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:49:30 -0400
+
+SyntaxError (/Users/Joe/Rails/copy/Comp120proj/app/controllers/tours_controller.rb:15: syntax error, unexpected $undefined, expecting ')'
+      redirect_to(@)
+                   ^
+/Users/Joe/Rails/copy/Comp120proj/app/controllers/tours_controller.rb:71: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:49:43 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+  [1m[36mArtwork Load (469.3ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+Completed   in 653ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.1ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:52:45 -0400
+
+SyntaxError (/Users/Joe/Rails/copy/Comp120proj/app/controllers/tours_controller.rb:15: syntax error, unexpected $undefined, expecting ')'
+      redirect_to(@)
+                   ^
+/Users/Joe/Rails/copy/Comp120proj/app/controllers/tours_controller.rb:71: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:53:13 -0400
+
+SyntaxError (/Users/Joe/Rails/copy/Comp120proj/app/controllers/tours_controller.rb:71: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:53:23 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (509.5ms)[0m  SELECT "artworks".* FROM "artworks"
+Completed   in 690ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.1ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:53:58 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+  [1m[36mArtwork Load (464.0ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+Redirected to http://localhost:3000/tours
+Completed 302 Found in 641ms
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:53:59 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.8ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (19.9ms)
+Completed 200 OK in 152ms (Views: 26.4ms | ActiveRecord: 466.9ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:54:01 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (473.6ms)[0m  SELECT "artworks".* FROM "artworks"
+Redirected to http://localhost:3000/tours
+Completed 302 Found in 644ms
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:54:02 -0400
+  Processing by ToursController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+Rendered tours/index.html.erb within layouts/cmsapplication (19.5ms)
+Completed 200 OK in 143ms (Views: 25.7ms | ActiveRecord: 476.4ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:54:04 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+  [1m[36mArtwork Load (480.4ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+Redirected to http://localhost:3000/tours
+Completed 302 Found in 651ms
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:54:04 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (20.4ms)
+Completed 200 OK in 142ms (Views: 26.6ms | ActiveRecord: 483.1ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:55:15 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (20.4ms)
+Completed 200 OK in 140ms (Views: 26.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:55:17 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (476.6ms)[0m  SELECT "artworks".* FROM "artworks"
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (NULL, NULL, NULL, '2011-05-07 16:55:17.856657', '2011-05-07 16:55:17.856657')[0m
+Redirected to http://localhost:3000/tours
+Completed 302 Found in 693ms
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:55:17 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.9ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (19.8ms)
+Completed 200 OK in 98ms (Views: 26.2ms | ActiveRecord: 480.1ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:55:20 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.9ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (475.1ms)[0m  SELECT "artworks".* FROM "artworks"
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (NULL, NULL, NULL, '2011-05-07 16:55:20.947067', '2011-05-07 16:55:20.947067')[0m
+Redirected to http://localhost:3000/tours
+Completed 302 Found in 707ms
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:55:21 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (19.6ms)
+Completed 200 OK in 96ms (Views: 25.8ms | ActiveRecord: 478.5ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:55:22 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (513.9ms)[0m  SELECT "artworks".* FROM "artworks"
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "tour_items" ("artwork_id", "tour_id", "position", "created_at", "updated_at") VALUES (NULL, NULL, NULL, '2011-05-07 16:55:23.131677', '2011-05-07 16:55:23.131677')[0m
+Redirected to http://localhost:3000/tours
+Completed 302 Found in 663ms
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:55:23 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (20.7ms)
+Completed 200 OK in 146ms (Views: 26.9ms | ActiveRecord: 517.1ms)
+
+
+Started GET "/tours" for 127.0.0.1 at 2011-05-07 12:55:39 -0400
+  Processing by ToursController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+Rendered tours/index.html.erb within layouts/cmsapplication (62.9ms)
+Completed 200 OK in 142ms (Views: 69.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:55:40 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTour Load (0.7ms)[0m  [1mSELECT "tours".* FROM "tours"[0m
+  [1m[35mArtwork Load (474.3ms)[0m  SELECT "artworks".* FROM "artworks"
+Completed   in 652ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.3ms)
+
+
+Started GET "/tours/tour_items" for 127.0.0.1 at 2011-05-07 12:55:46 -0400
+  Processing by ToursController#tour_items as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTour Load (0.7ms)[0m  SELECT "tours".* FROM "tours"
+  [1m[36mArtwork Load (492.4ms)[0m  [1mSELECT "artworks".* FROM "artworks"[0m
+Completed   in 672ms
+
+ActionView::MissingTemplate (Missing template tours/tour_items with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/Users/Joe/Rails/copy/Comp120proj/app/views", "/usr/local/lib/ruby/gems/1.9.1/gems/devise-1.3.4/app/views"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.2ms)

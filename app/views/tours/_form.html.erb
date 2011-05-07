@@ -1,28 +1,22 @@
-<%= form_for(@tour) do |f| %>
-  <% if @tour.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@tour.errors.count, "error") %> prohibited this tour from being saved:</h2>
+<%= semantic_form_for @tour, do |form| %>
+    <% if @tour.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@tour.errors.count, "error") %> prohibited this exhibition from being saved:</h2>
 
-      <ul>
-      <% @tour.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-<h1>For now, tours may contain up to 5 items</h1>
-<% 5.times do%>
-  <div class="field">
-    <%= f.label :artwork_id %><br />
-    <%= f.text_field :artwork_id %>
-  </div>
-  <div class="field">
-    <%= f.label :position %><br />
-    <%= f.text_field :position %>
-  </div>
-<% end %>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-
+            <ul>
+            <% @tour.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+            </ul>
+        </div>
+    <% end %>
+    
+    <%= form.inputs do %>
+        <%= form.input :name, :required => true, :wrapper_html => { :title => "Name of the Tour" } %>
+        <%= form.input :desc, :required => true, :wrapper_html => { :title => "Description of the tour" } %>
+    <% end %>
+    
+    <%= form.buttons do %>
+        <%= form.commit_button :button_html => { :class => "primary" } %>
+    <% end %>
 <% end %>

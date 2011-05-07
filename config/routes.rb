@@ -1,4 +1,5 @@
 Artgallery::Application.routes.draw do
+  match '/tours/tour_items', :to => "tours#tour_items"
   resources :exhibitions
   devise_for :users
   resources :tours

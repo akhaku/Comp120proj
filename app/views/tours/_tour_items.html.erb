@@ -1,0 +1,22 @@
+<%= semantic_form_for @touritem, :url=>arts_path do |f| %>
+    <% if @touritem.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@touritem.errors.count, "error") %> prohibited this artwork from being saved:</h2>
+
+            <ul>
+            <% @touritem.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+            </ul>
+        </div>
+    <% end %>
+    
+    <%= f.inputs do %>
+        <%= f.input :tour_id, :required => true, :as => :select, :collection => @tours, :wrapper_html => { :title => "Tour ID" } %>
+        <%= f.input :artwork_id, :required => true, :as => :select, :collection => @artworks, :wrapper_html => { :title => "Artist ID" } %>
+    <% end %>
+    
+    <%= f.buttons do %>
+        <%= f.commit_button :button_html => { :class => "primary" } %>
+    <% end %>
+<% end %>
