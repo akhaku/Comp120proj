@@ -1,7 +1,4 @@
 <h1>Manage Account</h1>
-
-
-<%= link_to 'Create User', new_admin_path %>
 <p id="notice"> <%= notice %></p>
 <h2>Change password</h2>
 <% semantic_form_for @user, :url=>'manage/changepass' do |f| %>

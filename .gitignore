@@ -1,10 +1,10 @@
-/.bundle
-/db/*.sqlite3
-/log/*
-/tmp/*
+.bundle
+db/*.sqlite3
+log/*
+tmp/*
 .DS_Store
 *~
-/tmp/*
+tmp/**/*
 config/*.yml
 nbproject/*
 nbproject/**/*
