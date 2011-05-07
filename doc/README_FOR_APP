@@ -3,7 +3,7 @@ Art Gallery Rails Skeleton Setup
 
 After pulling skeleton from repository:
 
-1. Type "ruby -v" to ensure you have a working version of ruby in your path.  Ideally, you should have >= 1.8.7.
+1. Type "ruby -v" to ensure you have a working version of ruby in your path.  Ideally, you should have >= 1.9.7.
 
 2. Type "sudo gem install rails" - This will install the latest version of rails.
 
@@ -30,5 +30,10 @@ All bootstrapping should now be done.  If you have problems:
 
 3. Make sure the database is setup correctly in your local mysql.  To test, try logging in to mysql as the user you specify in the database.yml and try to access the DB.
 
-4. If you get an error when you attempt to rake db:migrate or rake db:seed, do rake db:migrate:reset and then try rake db:seed.
+4. If you get an error when you attempt to rake db:migrate or rake db:seed, do rake db:reset, rake db:migrate and then try rake db:seed.
+
+
+Notes:
+
+1. The seed file inputs all the artworks and creates a default superuser who can add other users to the cms. It also adds a sample tour.
 
