@@ -1,0 +1,33 @@
+<%= semantic_form_for @exhibition do |form| %>
+    <% if @exhibition.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@exhibition.errors.count, "error") %> prohibited this exhibition from being saved:</h2>
+
+            <ul>
+            <% @exhibition.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+            </ul>
+        </div>
+    <% end %>
+    
+    <%= form.inputs do %>
+        <%= form.input :name, :required => true, :wrapper_html => { :title => "Name of the Exhibition" } %>
+        <%= form.input :open, :required => true, :wrapper_html => { :title => "Date the Exhibition opens" } %>
+        <%= form.input :close, :required => true, :wrapper_html => { :title => "Date the Exhibition closes" } %>
+        <%= form.input :opening, :wrapper_html => { :title => "Start time of the Exhibition's Opening"} %>
+        <%= form.input :opening_end, :wrapper_html => { :title => "End time of the Exhibition's Opening"} %>
+        <%= form.input :description, :required => true, :wrapper_html => { :title => "Type of the work of art" } %>
+        <%= form.input :location, :required => true, :as => :select, :collection => ["Tisch Gallery", "Remis Sculpture Court", "Kopelman Gallery", "All", "Other"], :wrapper_html => { :title => "Location of the Exhibition" } %>
+        <%= form.input :image1, :as => :file, :wrapper_html => { :title => "Upload an artwork image" } %>
+        <%= form.input :image2, :as => :file, :wrapper_html => { :title => "Upload an artwork image" } %>
+        <%= form.input :image3, :as => :file, :wrapper_html => { :title => "Upload an artwork image" } %>
+        <%= form.input :image4, :as => :file, :wrapper_html => { :title => "Upload an artwork image" } %>
+        <%= form.input :image5, :as => :file, :wrapper_html => { :title => "Upload an artwork image" } %>
+        <%= form.input :filename, :as => :file, :required => true, :wrapper_html => { :title => "Upload the pdf file" } %>
+    <% end %>
+    
+    <%= form.buttons do %>
+        <%= form.commit_button :button_html => { :class => "primary" } %>
+    <% end %>
+<% end %>

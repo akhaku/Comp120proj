@@ -5,10 +5,16 @@ class CreateArtworks < ActiveRecord::Migration
       t.string :creator
       t.string :title
       t.text :description
-      t.text :location
+      t.string :location
       t.string :recfrom
       t.date :date
       t.string :filename
+      t.text :notes
+      t.boolean :onDisplay
+      t.string :thumbnail
+      t.float :lat
+      t.float :lng
+      t.boolean :issuper
 
       t.timestamps
     end

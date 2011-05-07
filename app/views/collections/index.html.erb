@@ -1,5 +1,38 @@
 <h1>Tufts Art Gallery</h1></br>
 
+<% form_tag "search", :method => 'get' do %>
+<table>
+<tr><th>Search by</th>
+  <th>Order by</th>
+  <th></th></tr>
+  <tr>
+<td>
+    <%= select_tag(:filter, options_for_select([
+      ['All', 'all'],      
+      ['Artist', 'creator'],
+      ['Title', 'title'],
+      ['Object (type)', 'object'],
+      ['Location', 'location'],
+      ['Description', 'description'],
+      ['Donor', 'recfrom']
+       ])) %>
+       </td><td>
+   <%= select_tag(:order, options_for_select([  
+       ['Artist', 'creator'],
+       ['Title', 'title'],
+       ['Object (type)', 'object'],
+       ['Location', 'location'],
+       ['Description', 'description'],
+       ['Donor', 'recfrom']
+        ])) %></td>
+        <td>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", :name => nil %>
+    </td>
+    </tr></table>
+  </p>
+<% end %>
+
 <h2>View by</h2></br>
 <%= link_to "Artist", artists_path%>
 <%= link_to "Donor", donors_path%>

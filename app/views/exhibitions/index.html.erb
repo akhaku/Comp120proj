@@ -1,0 +1,38 @@
+<h1>Listing exhibitions</h1>
+
+<%= link_to 'New Exhibition', new_exhibition_path %>
+
+<br /><br />
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Open</th>
+    <th>Close</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @exhibitions.each do |exhibition| %>
+  <tr>
+    <td><%= trimstring(exhibition.name, 50) %></td>
+    <td><%= exhibition.open %></td>
+    <td><%= exhibition.close %></td>
+    <td><%= trimstring(exhibition.description, 50) %></td>
+    <td><%= exhibition.location %></td>
+    <td><%= link_to 'Show', exhibition %></td>
+    <td><%= link_to 'Edit', edit_exhibition_path(exhibition) %></td>
+    <td><%= link_to 'Destroy', exhibition, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate %>
+<br />
+<style type="text/css">
+  div#navbar a:nth-child(4){
+    background-color:#CEF6F5;
+}
+</style>

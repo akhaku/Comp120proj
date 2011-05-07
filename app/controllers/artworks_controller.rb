@@ -1,4 +1,16 @@
 class ArtworksController < ApplicationController
+  # GET /artworks/search?query=Anything%2C-Search
+  # GET /artworks/search.json?query=Anything%2C-Search
+  def search
+    @artworks = Artwork.search(params[:query], params[:filter], params[:order])
+    
+    respond_to do |format|
+      format.html # search.html.erb
+      format.xml   { render :xml => @artworks }
+      format.json  { render :json => @artworks }
+    end
+  end
+  
   # GET /artworks
   # GET /artworks.xml
   def index

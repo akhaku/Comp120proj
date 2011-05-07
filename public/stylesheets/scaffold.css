@@ -1,0 +1,207 @@
+body {
+    background-color: #F2F2F2;
+    background-color: #292A0A;
+    color: #333;
+}
+
+body, p, ol, ul, td {
+    font-family: helvetica, verdana, arial, sans-serif;
+    font-size:13px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+
+#notice {
+    color: green;
+    font-size:20px;
+}
+
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#error_explanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+div#login{
+    padding:30px;
+    width:400px;
+    font-size:200%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:150px;
+    background-color:#CECEF6;
+    border-radius:20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+}
+#login h2{
+    font-size:28px;
+    text-align:center;
+    font-weight:normal;
+}
+div#navbar{
+    float:right;
+    width:230px;
+    text-align:center;
+}
+div#content{
+    float:left;
+    background-color:#CEF6F5;
+    width:700px;
+    padding:10px;
+    min-height:500px;
+    border-radius:20px 0px 20px 20px;
+    -moz-border-radius:20px 0px 20px 20px;
+    -webkit-border-radius:20px 0px 20px 20px;
+}
+div#wrapper{
+    width:950px;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#navbar a{
+    display:block;
+    width:150px;
+    height:25px;
+    padding:20px;
+    padding-top:25px;
+    font-size: 18px;
+    vertical-align: middle;
+    background-color:#E3F6CE;
+    border-bottom:1px solid lime;
+    text-decoration: none;
+    text-align:center;
+    color:#0B3B0B
+}
+div#navbar a:hover{
+    background-color:#A9F5A9;
+    color:#04B404;
+}
+div#navbar a:first-child {
+    border-radius:0px 20px 0px 0px;
+}
+div#navbar a:last-child {
+    border-radius:0px 0px 20px 0px;
+    border-bottom:0px solid black;
+}
+div#navbar button{
+    font-size:20px;
+    padding:7px;
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+}
+div#header{
+    font-size:35px;
+    padding-left:30px;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color:#CEF6E3;
+    width:870px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#header a{
+    font-size:15px;
+    text-decoration:none;
+    display:block;
+    float:right;
+    padding:14px;
+    margin:10px;
+    color:#BDBDBD;
+    background-color:#243B0B;
+    border-radius:12px;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+}
+div#header a:hover{
+    color:#FFFFFF;
+    background-color:#088A4B;
+}
+
+h1{
+    text-align: center;
+    font-weight:normal;
+    letter-spacing:1px;
+    color:#240B3B;
+    padding-bottom:5px;
+    font-size:35px;
+    border-bottom:4px dashed #393B0B;
+}
+form fieldset ol{
+    font-size:15px;
+    color:#5E610B;    
+}
+h2{
+    font-weight:normal;
+    font-size:25px;
+    padding-left:10px;
+    padding-bottom:20px;
+}
+form div{
+    font-size:18px;
+    color:#5E610B;
+    margin-bottom:10px;
+}
+form div span{
+    color:#5FB404;
+}
+form input.formbut {
+    padding:15px;
+    background-color:#E3F6CE;
+    border-radius:15px;
+    color:#08088A;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+}
+form input.formbut:hover{
+    background-color:#9AFE2E;
+    color:#0080FF;
+}
+tr.item { width: 300px; border: 1px dotted #000;}
+div.note{
+    padding:7px;
+    border:2px dashed #0B0B61;
+    color:#0B0B61;
+    font-size:15px;
+    background-color:#E3F6CE;
+    margin-left: auto;
+    margin-right:auto;
+    width:400px;
+    text-align: center;
+}
+div#error_explanation ul li{
+    list-style-type: none;
+}
