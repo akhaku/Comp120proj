@@ -4243,3 +4243,60 @@ Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
   [1m[35mSQL (0.4ms)[0m   SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateArtworks (20110408030618)
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.9ms)[0m  [1mCREATE TABLE "artworks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "object" varchar(255), "creator" varchar(255), "title" varchar(255), "description" text, "location" varchar(255), "recfrom" varchar(255), "date" date, "filename" varchar(255), "notes" text, "onDisplay" boolean, "thumbnail" varchar(255), "lat" float, "lng" float, "issuper" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110408030618')
+Migrating to DeviseCreateUsers (20110408031224)
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateArtworks (20110408030618)
+Migrating to CreateTours (20110408031527)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.8ms)[0m  [1mCREATE TABLE "tours" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "desc" text, "order" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110408031527')
+Migrating to AddTourName (20110408052047)
+  [1m[36mSQL (2.0ms)[0m  [1mALTER TABLE "tours" ADD "name" varchar(255)[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110408052047')
+Migrating to CreateTourItems (20110425042736)
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "tour_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "artwork_id" integer, "tour_id" integer, "position" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110425042736')
+Migrating to Exhibition (20110505042412)
+  [1m[36mSQL (1.5ms)[0m  [1mCREATE TABLE "exhibitions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "open" date, "close" date, "description" text, "location" varchar(255), "image1" varchar(255), "image2" varchar(255), "image3" varchar(255), "image4" varchar(255), "image5" varchar(255), "opening" time, "filename" varchar(255), "opening_end" time, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110505042412')
+Migrating to DeviseCreateUsers (20110507035051)
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[35mSQL (0.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20110507035051')[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("artworks")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("exhibitions")
+  [1m[36mSQL (0.2ms)[0m  [1mPRAGMA index_list("tour_items")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("tours")
+  [1m[36mSQL (6.2ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
